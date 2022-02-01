@@ -33,7 +33,7 @@ jobs:
     - name: execute Python
       run: |
        python change.py
-       echo "s">>1
+       echo "s">>2
     - name: Commit
       run: |
         git config --global user.name "post_bot"
