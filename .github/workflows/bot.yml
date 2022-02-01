@@ -1,0 +1,45 @@
+name: 'sign in Bot'
+ 
+on:
+  watch:
+    types: started
+
+jobs:
+  bot:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Set up Python 3.7
+      uses: actions/setup-python@master
+      with:
+        python-version: 3.7
+    - name: Set up Python
+      uses: actions/setup-python@v2
+
+      with:
+
+       python-version: '3.x'
+
+      # 安装依赖
+
+    - name: Install dependencies
+
+      run: |
+       python -m pip install --upgrade pip
+       pip install requests
+    - name: execute Python
+      run: |
+       python change.py
+    - name: Commit
+      run: |
+        git config --global user.name "post_bot"
+        git config --global user.email "sh3d0ww01f@gmail.com"
+        git add .
+        git commit -m "change!!!"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
