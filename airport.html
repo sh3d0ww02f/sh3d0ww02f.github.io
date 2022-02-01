@@ -1,0 +1,92 @@
+
+          <html>
+        <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+            <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+     
+     <table class="table">
+	<caption>2022-02-01,19时 更新完毕</caption>
+   <thead>
+      <tr>
+         <th>类型</th>
+         <th>订阅地址</th>
+      </tr>
+   </thead>
+   <tbody>
+    
+            <tr>
+         <td>ssr</td>
+         <td>https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/ssr.config</td>
+		  <td><button type="button" class="btn btn-info" id="ssr">复制到剪切板</button></td>
+      </tr>
+            
+            <tr>
+         <td>ss</td>
+         <td>https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/ss.config</td>
+		  <td><button type="button" class="btn btn-info" id="ss">复制到剪切板</button></td>
+      </tr>
+            
+            <tr>
+         <td>trojan</td>
+         <td>https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/trojan.config</td>
+		  <td><button type="button" class="btn btn-info" id="trojan">复制到剪切板</button></td>
+      </tr>
+            
+            <tr>
+         <td>clash</td>
+         <td>https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/clash.yaml</td>
+		  <td><button type="button" class="btn btn-info" id="clash">复制到剪切板</button></td>
+      </tr>
+            
+            <tr>
+         <td>shadowrocket</td>
+         <td>https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/shadowrocket.yaml</td>
+		  <td><button type="button" class="btn btn-info" id="shadowrocket">复制到剪切板</button></td>
+      </tr>
+            
+            <tr>
+         <td>v2</td>
+         <td>https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/vmess.config</td>
+		  <td><button type="button" class="btn btn-info" id="v2">复制到剪切板</button></td>
+      </tr>
+            
+   </tbody>
+</table>
+     
+      <script>
+          function copyText(text, callback){ // text: 要复制的内容， callback: 回调
+                    var tag = document.createElement('input');
+                    tag.setAttribute('id', 'cp_hgz_input');
+                    tag.value = text;
+                    document.getElementsByTagName('body')[0].appendChild(tag);
+                    document.getElementById('cp_hgz_input').select();
+                    document.execCommand('copy');
+                    document.getElementById('cp_hgz_input').remove();
+                    if(callback) {callback(text)}
+                }
+          document.getElementById('ssr').onclick = function (){
+                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/ssr.config', function (){alert("复制成功")})
+            }
+          document.getElementById('ss').onclick = function (){
+                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/ss.config', function (){alert("复制成功")})
+            }
+          document.getElementById('trojan').onclick = function (){
+                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/trojan.config', function (){alert("复制成功")})
+            }
+          document.getElementById('v2').onclick = function (){
+                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/vmess.config', function (){alert("复制成功")})
+            }
+          document.getElementById('shadowrocket').onclick = function (){
+                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/shadowrocket.yaml', function (){alert("复制成功")})
+            }
+          document.getElementById('clash').onclick = function (){
+                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/clash.yaml', function (){alert("复制成功")})
+            }
+         </script>
+        </body>
+     </html>
+     
