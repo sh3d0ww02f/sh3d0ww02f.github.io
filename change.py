@@ -2,7 +2,7 @@ import requests
 import base64
 import datetime
 ss=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/ss.md"]        
-vmess=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/vmess.md","https://raw.githubusercontents.com/wrfree/free/main/v2","https://proxies.bihai.cf/vmess/sub?c=CN,HK,TW,JP"]
+vmess=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/vmess.md","https://raw.githubusercontents.com/wrfree/free/main/v2","https://proxies.bihai.cf/vmess/sub?c=CN,HK,TW,JP","https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg"]
 trojan=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/trojan.md","https://proxies.bihai.cf/trojan/sub"]
 clash=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/clash.yaml","https://free.kingfu.cf/clash/proxies?c=CN,HK,TW,JP","https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,JP"]
 ssr=["https://raw.githubusercontents.com/wrfree/free/main/ssr","https://proxies.bihai.cf/ssr/sub"]
