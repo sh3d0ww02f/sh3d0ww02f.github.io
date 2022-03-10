@@ -74,13 +74,13 @@ def handle_all():
 def update_html():
      target=["ssr",'ss','trojan','clash',"shadowrocket","v2"]
      l={}
-     base="https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/{}.config"
+     base="https://newbird.cf/{}.config"
      ssr=base.format("ssr")
      ss=base.format("ss")
      trojan=base.format("trojan")
      vmess=base.format("vmess")
-     shadowrocket="https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/shadowrocket.yaml"
-     clash="https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/clash.yaml"
+     shadowrocket="https://newbird.cf/shadowrocket.yaml"
+     clash="https://newbird.cf/clash.yaml"
      l.update({"ssr":ssr,"ss":ss,"trojan":trojan,"clash":clash,"shadowrocket":shadowrocket,"v2":vmess})
      head='''
           <html>
@@ -105,22 +105,22 @@ def update_html():
                     if(callback) {callback(text)}
                 }
           document.getElementById('ssr').onclick = function (){
-                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/ssr.config', function (){alert("复制成功")})
+                copyText( 'https://newbird.cf/ssr.config', function (){alert("复制成功")})
             }
           document.getElementById('ss').onclick = function (){
-                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/ss.config', function (){alert("复制成功")})
+                copyText( 'https://newbird.cf/ss.config', function (){alert("复制成功")})
             }
           document.getElementById('trojan').onclick = function (){
-                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/trojan.config', function (){alert("复制成功")})
+                copyText( 'https://newbird.cf/trojan.config', function (){alert("复制成功")})
             }
           document.getElementById('v2').onclick = function (){
-                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/vmess.config', function (){alert("复制成功")})
+                copyText( 'https://newbird.cf/vmess.config', function (){alert("复制成功")})
             }
           document.getElementById('shadowrocket').onclick = function (){
-                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/shadowrocket.yaml', function (){alert("复制成功")})
+                copyText( 'https://newbird.cf/shadowrocket.yaml', function (){alert("复制成功")})
             }
           document.getElementById('clash').onclick = function (){
-                copyText( 'https://raw.githubusercontents.com/sh3d0ww02f/sh3d0ww02f.github.io/main/clash.yaml', function (){alert("复制成功")})
+                copyText( 'https://newbird.cf/clash.yaml', function (){alert("复制成功")})
             }
          </script>
         </body>
