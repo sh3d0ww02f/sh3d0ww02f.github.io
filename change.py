@@ -58,10 +58,10 @@ def handle_all():
         ss_handle()
     except:
         pass    
-    try:
-        clash_handle()
-    except:
-        pass        
+    #try:
+    clash_handle()
+    #except:
+       # pass        
     try:
         vmess_handle()
     except:
