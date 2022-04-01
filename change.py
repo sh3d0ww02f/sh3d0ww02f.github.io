@@ -28,7 +28,7 @@ def other(name,n_):
 def clash_handle():
     a1=requests.get(clash[0],headers=headers).text
     b1=requests.get(clash[1],headers=headers).text.replace("-","  -")
-    c1=requests.get(clash[2],headers=headers)
+    c1=requests.get(clash[2],headers=headers).text
     content=a1.replace("proxies:\n",b1).replace("proxies:\n",c1,1)
     content=a1
     with open("clash.yaml",'w',encoding="utf-8")as f:
