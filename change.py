@@ -4,7 +4,7 @@ import datetime
 ss=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/ss.md"]        
 vmess=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/vmess.md","https://raw.githubusercontents.com/wrfree/free/main/v2","https://proxies.bihai.cf/vmess/sub?c=CN,HK,TW,JP","https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg"]
 trojan=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/trojan.md","https://proxies.bihai.cf/trojan/sub"]
-clash=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/clash.yaml","https://free.kingfu.cf/clash/proxies?c=CN,HK,TW,JP","https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,JP"]
+clash=["https://raw.githubusercontents.com/colatiger/v2ray-nodes/master/clash.yaml","https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,JP","https://raw.githubusercontent.com/git-yusteven/openit/main/pub/combine.yaml"]
 ssr=["https://raw.githubusercontents.com/wrfree/free/main/ssr","https://proxies.bihai.cf/ssr/sub"]
 shadowrocket=["https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,JP,US"]
 headers={"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}
@@ -28,7 +28,7 @@ def other(name,n_):
 def clash_handle():
     a1=requests.get(clash[0],headers=headers).text
     b1=requests.get(clash[1],headers=headers).text.replace("-","  -")
-    c1=requests.get(clash[2],headers=headers).text.replace("-","  -")
+    c1=requests.get(clash[2],headers=headers)
     content=a1.replace("proxies:\n",b1).replace("proxies:\n",c1,1)
     content=a1
     with open("clash.yaml",'w',encoding="utf-8")as f:
