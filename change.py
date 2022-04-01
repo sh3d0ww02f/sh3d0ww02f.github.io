@@ -30,7 +30,8 @@ def clash_handle():
     resp="proxies:"
     for url in clash:
         #tot=resp.replace("proxies:",requests.get(url).text)
-	print(url,requests.get(url))
+	print(url)
+	print(requests.get(url))
     #with open("res.yaml",'w',encoding="utf-8")    as f :
      #   f.write(tot)
 	
