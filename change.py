@@ -26,12 +26,11 @@ def other(name,n_):
     with open(n_+".config",'w')as f:
         f.write(base64.b64encode(('\n'.join(list(set(result)))).encode()).decode())
 def clash_handle():
-    tot=""
     resp="proxies:"
     for url in clash:
-        tot=resp.replace("proxies:",requests.get(url,headers={"user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36"}).text)
+        resp=resp.replace("proxies:",requests.get(url,headers={"user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36"}).text)
     with open("res.yaml",'w',encoding="utf-8")    as f :
-        f.write(tot)
+        f.write(resp)
 	
 def shadowrocket_handle():  
         with open("shadowrocket.yaml",'w',encoding="utf-8")as f:
