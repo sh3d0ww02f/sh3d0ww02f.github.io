@@ -28,14 +28,10 @@ def other(name,n_):
 def clash_handle():
     tot=""
     resp="proxies:"
-    r=requests.get(clash[0],headers={"user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36"})
-    print(r.text)
-    #for url in clash:
-        #tot=resp.replace("proxies:",requests.get(url).text)
-        #print(url)
-        #print('',requests.get(url))
-    #with open("res.yaml",'w',encoding="utf-8")    as f :
-     #   f.write(tot)
+    for url in clash:
+        tot=resp.replace("proxies:",requests.get(url,headers={"user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36"}).text)
+    with open("res.yaml",'w',encoding="utf-8")    as f :
+        f.write(tot)
 	
 def shadowrocket_handle():  
         with open("shadowrocket.yaml",'w',encoding="utf-8")as f:
