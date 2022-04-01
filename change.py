@@ -71,6 +71,13 @@ def handle_all():
     except:
         pass    
     log()
+def test_clash_new():
+	try:
+		resp=requests.get("https://sub.xeton.dev/sub?target=clash&url=https://newbird.cf/vmess.config").text
+	except:
+		resp=""
+	with open("clash1.yaml",'w')as f:
+		f.write(resp)
 def update_html():
      target=["ssr",'ss','trojan','clash',"shadowrocket","v2"]
      l={}
@@ -156,3 +163,4 @@ def update_html():
         f.write(html)
 handle_all()
 update_html()    
+test_clash_new()
