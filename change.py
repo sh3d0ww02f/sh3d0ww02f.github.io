@@ -29,7 +29,7 @@ def clash_handle():
     resp="proxies:"
     for i,url in enumerate(clash):
         text=requests.get(url,headers={"user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36"}).text
-        with open(r"clash{i}.yaml",'w',encoding="utf-8")    as f :
+        with open(f"clash{i}.yaml",'w',encoding="utf-8")    as f :
             f.write(text)
 	
 def shadowrocket_handle():  
