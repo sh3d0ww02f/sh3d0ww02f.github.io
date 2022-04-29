@@ -5,1117 +5,1287 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1, server: hkaz4.xmrth-node.xyz, port: 13302, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz4.xmrth-node.xyz}}}
-  - {name: 🇺🇲 github.com/freefq - 美国  3, server: us001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08, server: 101.230.149.29, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}}
-  - {name: 🇺🇲 github.com/freefq - 美国  32, server: misaka1433.tk, port: 443, type: trojan, password: YcQgIbGZNNd1PwsF}
-  - {name: 183.240.9.28:29983, server: 183.240.9.28, port: 29983, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇭🇰 HK_5513 @WangCai_1, server: xltc.ethash.as4812.com, port: 5513, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇹🇷 伊斯坦布尔c, server: 122.9.62.10, port: 4720, type: ss, cipher: chacha20-ietf-poly1305, password: 573d4c8f31e9e003ea3cb800aa29f00a4c744f63ed57a807cbbc6e725db1e21d}
-  - {name: 台灣 A01, server: ygzyd.sub-nthu.com, port: 35005, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: tw-1.sub-nthu.com}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
-  - {name: 🇯🇵 JP_1045, server: 18.181.176.32, port: 17465, type: vmess, uuid: 8a74fb3c-fce1-4e28-ee11-4b5368cb2ad7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 JP_1048, server: 146.56.116.190, port: 45177, type: vmess, uuid: c2f1ae57-7ada-4bac-f510-a8336c8708dd, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾Hinet-4号线路_8, server: gdyd.xxcv.cc, port: 36660, type: vmess, uuid: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: "%7B%22host%22:%22huayun.xyz%22%7D"}}}
-  - {name: 🇭🇰 香港 | D | 流媒體解鎖 |, server: CMZHUYUN002.baiyun.pw, port: 5022, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
-  - {name: 120.232.251.206:29979, server: 120.232.251.206, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇭🇰 HK_882, server: hkaz2.xmrth-node.xyz, port: 11153, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇫🇷 法国Do1号_23, server: 159.223.29.152, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 120.232.251.206:29996, server: 120.232.251.206, port: 29996, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇺🇲 github.com/freefq - 美国  6, server: us002.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
-  - {name: 🇭🇰 香港HGC, server: 210.0.159.90, port: 38443, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
-  - {name: 🇺🇲 github.com/freefq - 美国  26, server: sgp001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
-  - {name: 🇸🇬 SG_6611 @WangCai_1, server: xltc.ethash.as4812.com, port: 6611, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 全球直连①, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true}
-  - {name: 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19, server: 213.183.53.200, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn}
-  - {name: 🇸🇬 SG_6618 @WangCai_1, server: xltc.ethash.as4812.com, port: 6618, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 183.240.9.28:29987, server: 183.240.9.28, port: 29987, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: "PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]", server: 122.9.54.58, port: 3281, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
-  - {name: 🇭🇰 香港A Netflix, server: hka.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
-  - {name: 🇭🇰 香港E TLS, server: hke.quickconnect.buzz, port: 443, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2, server: CMZHUYUN002.baiyun.pw, port: 5021, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
-  - {name: 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip, server: use1a1.sakurajimamai.love, port: 10086, type: vmess, uuid: 2da6f020-ae4d-30e5-b218-e8837a57135e, alterId: 0, cipher: chacha20-poly1305, tls: true}
-  - {name: 🇭🇰 HongKong 02, server: api-gzct.malibaba.xyz, port: 10081, type: trojan, password: 0bf3107d-9fad-3073-8b86-c9cde7ad1f94, sni: hk2.daydaygeek.icu}
-  - {name: 🇺🇲 github.com/freefq - 美国  24, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908}
-  - {name: 🇸🇬 SG_6614 @WangCai_1, server: xltc.ethash.as4812.com, port: 6614, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
   - {name: 🇸🇬 新加坡 E01, server: szdx.sub-nthu.com, port: 35003, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: sg-1.sub-nthu.com}
-  - {name: 萨拉热窝b, server: 120.232.214.153, port: 3223, type: ss, cipher: chacha20-ietf-poly1305, password: 638d06e1a5b00911c29e526d4f2e50e7c0e3b20d14a37cff6ef1c2d8dfd59d72}
-  - {name: 🇨🇳 github.com/freefq - 上海市电信 25, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
-  - {name: 183.240.9.30:29983, server: 183.240.9.30, port: 29983, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2, server: hknf2.qingyun123.xyz, port: 10070, type: trojan, password: 09982e0d-8fc0-4a6a-ac58-473610881121}
-  - {name: 🇯🇵 Linode日本2号-湖南三线-SS_10, server: 113.240.72.244, port: 22005, type: ss, cipher: chacha20-ietf-poly1305, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd}
-  - {name: 🇺🇲 github.com/freefq - 美国3COM公司企业网 14, server: jgwxn1.gaox.ml, port: 443, type: trojan, password: 0f715619-0037-4358-a7c6-958106bc6b49}
-  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 1ae053d9-90a9-4548-a0e3-327f62171331, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: fr1t.moonfree.top}}}
-  - {name: 🇭🇰 HK_5504 @WangCai_1, server: xltc.ethash.as4812.com, port: 5504, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: "🇭🇰 [DnsFree]香港 01", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 63bc1528-72f0-4881-b19e-699ec248fbb4}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16, server: 120.240.48.20, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇯🇵 JP_7713 @WangCai_1, server: xltc.ethash.as4812.com, port: 7713, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇳🇱 荷兰b, server: 122.9.62.6, port: 3281, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
-  - {name: 🇨🇳 CN_438, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
-  - {name: 🇨🇳 TW_5564 @WangCai_1, server: xltc.ethash.as4812.com, port: 5564, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇭🇰 香港HGC1_5×_13, server: 210.0.159.90, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇺🇲 US_8804 @WangCai_1, server: xltc.ethash.as4812.com, port: 8804, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇸🇬 SG_6605 @WangCai_1, server: xltc.ethash.as4812.com, port: 6605, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇯🇵 JP_7707 @WangCai_1, server: xltc.ethash.as4812.com, port: 7707, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11, server: uk001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
-  - {name: 🇯🇵 JP_7710 @WangCai_1, server: xltc.ethash.as4812.com, port: 7710, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇨🇳 TW_1652, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 61.222.202.140}}}
-  - {name: 🇹🇷 伊斯坦布尔d, server: 122.9.62.37, port: 4720, type: ss, cipher: chacha20-ietf-poly1305, password: 573d4c8f31e9e003ea3cb800aa29f00a4c744f63ed57a807cbbc6e725db1e21d}
-  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13, server: 104.24.208.82, port: 443, type: vmess, uuid: c504edd2-f15e-45a6-ad63-3a9840c19d1a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /zgjvvws, headers: {Host: www.wodaming.ga}}}
-  - {name: 120.232.251.206:29994, server: 120.232.251.206, port: 29994, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11, server: ru2902.cloudmatrix.xyz, port: 2902, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ru2902.cloudmatrix.xyz}}}
-  - {name: "🇭🇰 [DnsFree]香港 01 2", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 24085114-c2b0-47a0-80fe-d2a0d409aa5c}
-  - {name: 🇺🇲 US_8810 @WangCai_1, server: xltc.ethash.as4812.com, port: 8810, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14, server: 120.240.48.20, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}}
-  - {name: 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 1ae053d9-90a9-4548-a0e3-327f62171331, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: fr1t.moonfree.top}}}
-  - {name: 🇫🇷 FR_8863 @WangCai_1, server: xltc.ethash.as4812.com, port: 8863, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10, server: sg3.31vpn.com, port: 80, type: vmess, uuid: ff382d09-becd-41cb-8e4f-3e256b27de47, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/ntmdq/6267584ee4988/, headers: {Host: sg3.31vpn.com}}}
-  - {name: 🇺🇲 US_8814 @WangCai_1, server: xltc.ethash.as4812.com, port: 8814, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇭🇰 香港 E01, server: szdx.sub-nthu.com, port: 35002, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: hk-1.sub-nthu.com}
-  - {name: 🇸🇬 SG_6608 @WangCai_1, server: xltc.ethash.as4812.com, port: 6608, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 183.240.9.28:29979, server: 183.240.9.28, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881, server: V2-NODE-4-B.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: f5e59d18-a23a-4b94-b484-33d188a0af21, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: V2-NODE-4-B.GFWAIRPORT.NET}}}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439, server: gy.sharecentrepro.tk, port: 10001, type: vmess, uuid: 6731a7a4-cac0-4218-d3e7-a4fe8c933b5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenblog, headers: {Host: sgp.xrenblog.com}}}
-  - {name: MX_8866 @WangCai_1, server: xltc.ethash.as4812.com, port: 8866, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇭🇰 香港 | G |, server: CMZHUYUN002.baiyun.pw, port: 5025, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
-  - {name: 🇭🇰 Pool_🇭🇰HK_883, server: 43.229.115.134, port: 47950, type: vmess, uuid: 7c6cd216-0f93-44e8-dabc-fed1308a9bcc, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436, server: 120.240.48.20, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 HK_5510 @WangCai_1, server: xltc.ethash.as4812.com, port: 5510, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇺🇲 github.com/freefq - 美国3COM公司企业网 16, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11}
-  - {name: 🇺🇲 github.com/freefq - 美国  22, server: 45.147.160.86, port: 813, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-  - {name: 🇩🇪 DE_8855 @WangCai_1, server: xltc.ethash.as4812.com, port: 8855, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇯🇵 linode日本-2号_21, server: 172.104.96.170, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇨🇳 TW_5567 @WangCai_1, server: xltc.ethash.as4812.com, port: 5567, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20, server: hkaz7.xmrth-node.xyz, port: 13132, type: vmess, uuid: ebb8920a-63c4-368f-b3fd-3794f4fa1c98, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国, server: share-1mbps.fanqiangvpn.com, port: 80, type: vmess, uuid: ee8d15c0-927d-497a-ba84-65447a790f56, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: share-1mbps.fanqiangvpn.com}}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10, server: 119.147.20.236, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
-  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz1.xmrth-node.xyz}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_28, server: jpaz1.xmrth-node.xyz, port: 10058, type: vmess, uuid: 49aed705-ac45-332c-aa62-7ac9a9d8cb0b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: "网址: upyun.online/reg", server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true}
-  - {name: 🇭🇰 HK_5500 @WangCai_1, server: xltc.ethash.as4812.com, port: 5500, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12, server: 120.240.48.20, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}}
-  - {name: 🇺🇲 github.com/freefq - 美国  12, server: sgp002.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
-  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27, server: krnf1.qingyun123.xyz, port: 10050, type: trojan, password: 80cbe86c-99cc-416a-87ce-74006d863e3a}
-  - {name: 🇻🇳 VN_8833 @WangCai_1, server: xltc.ethash.as4812.com, port: 8833, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: "🇭🇰 [DnsFree]香港 02", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 24085114-c2b0-47a0-80fe-d2a0d409aa5c}
-  - {name: 🇯🇵 日本D Netflix, server: jpd.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇲 github.com/freefq - 美国  4, server: us003.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
-  - {name: 🇨🇳 github.com/freefq - 上海市电信 20, server: 101.230.149.29, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}}
-  - {name: ID_8829 @WangCai_1, server: xltc.ethash.as4812.com, port: 8829, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇸🇬 SG_6600 @WangCai_1, server: xltc.ethash.as4812.com, port: 6600, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: github.com/freefq - 湖北省宜昌市联通 5, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港HGC 2, server: 210.0.159.90, port: 38888, type: trojan, password: a0dac702-8ab0-40e7-a8a1-1dd7d8fb65e0, sni: huayun.xyz}
-  - {name: "🇭🇰 [DnsFree]香港 02 2", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 63bc1528-72f0-4881-b19e-699ec248fbb4}
-  - {name: 🇭🇰 HK_5519 @WangCai_1, server: xltc.ethash.as4812.com, port: 5519, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇨🇳 TW_1653, server: 61.222.202.140, port: 15789, type: vmess, uuid: 4535e708-5988-4377-a083-755ed60d8068, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 HK-B专线|香港, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: 13931d4f-e667-3688-9bbd-973b4fe161bb, sni: bnbq.jiashumao.net}
-  - {name: 120.232.251.206:29996 2, server: 120.232.251.206, port: 29996, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇸🇬 新加坡 | D |, server: CMZHUYUN.baiyun.pw, port: 5004, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437, server: 120.240.48.20, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 香港AZ-1号_29, server: 20.205.98.64, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 120.232.251.206:29994 2, server: 120.232.251.206, port: 29994, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇺🇲 US_8807 @WangCai_1, server: xltc.ethash.as4812.com, port: 8807, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转), server: bjaws.xxcv.cc, port: 20010, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440, server: 120.240.48.20, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
-  - {name: 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8, server: 119.147.20.236, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
-  - {name: 120.232.251.206:29980, server: 120.232.251.206, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇨🇳 TW_5555 @WangCai_1, server: xltc.ethash.as4812.com, port: 5555, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25, server: sg3.31vpn.com, port: 80, type: vmess, uuid: ff382d09-becd-41cb-8e4f-3e256b27de47, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/ntmdq/6267584ee4988/, headers: {Host: sg3.31vpn.com}}}
-  - {name: github.com/freefq - 湖南省长沙市电信 23, server: in-v1.sdgdn.com, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}}
-  - {name: 🇺🇲 US_32, server: sgaws001.xmrth-node.xyz, port: 12868, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇯🇵 linode日本-亚马逊北京双线路(中转), server: bjaws.xxcv.cc, port: 20020, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
-  - {name: jc.ap.fastqvpn.com:29980, server: jc.ap.fastqvpn.com, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇭🇰 香港AZ-2号, server: 20.239.157.77, port: 28443, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
-  - {name: 🇯🇵 JP_1047, server: 207.148.106.145, port: 8650, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 207.148.106.145}}}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13, server: in-v1.sdgdn.com, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}}
-  - {name: 東京 B01, server: shlt.sub-nthu.com, port: 35001, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: jp-1.sub-nthu.com}
-  - {name: 🇭🇰 HK_5507 @WangCai_1, server: xltc.ethash.as4812.com, port: 5507, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇰🇷 韩国亚马逊-4号_37, server: 54.180.139.211, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇯🇵 日本E Netflix, server: jpe.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇲 US_8818 @WangCai_1, server: xltc.ethash.as4812.com, port: 8818, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: IN_8870 @WangCai_1, server: xltc.ethash.as4812.com, port: 8870, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇫🇷 法国Do2号_24, server: 165.22.93.103, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇳🇱 荷兰a, server: 122.9.54.58, port: 3281, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
-  - {name: 🇸🇬 新加坡_R_441, server: ieplszhk-sz.qqgg.work, port: 52306, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:k4VJ9SyAu3, obfs-param: ajax.microsoft.com}
-  - {name: 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15, server: 119.147.20.236, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}}
-  - {name: 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz1.xmrth-node.xyz}}}
-  - {name: 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31, server: hkaz4.xmrth-node.xyz, port: 13302, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: 🇭🇰 HK_5516 @WangCai_1, server: xltc.ethash.as4812.com, port: 5516, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇨🇦 github.com/freefq - 加拿大  29, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 82a96743-115b-356d-90ae-2928f32d8958, alterId: 2, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}}
-  - {name: 🇭🇰 香港AZ-广东移动负载聚合双线(中转), server: gzyd.xxcv.cc, port: 20070, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
-  - {name: 120.232.251.206:29979 2, server: 120.232.251.206, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇨🇳 TW_5561 @WangCai_1, server: xltc.ethash.as4812.com, port: 5561, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: "🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]", server: 122.9.54.58, port: 2266, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
-  - {name: 🇺🇲 github.com/freefq - 美国Microsoft公司 30, server: rbmf.speedcncnforward3.tk, port: 10004, type: trojan, password: bba93123-c826-4279-9e7f-3bcdee96fa9d}
-  - {name: 🇰🇷 韩国亚马逊-5号_38, server: 52.78.89.199, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇯🇵 linode日本-1号_20, server: 139.162.124.250, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国亚马逊-1号_34, server: 13.124.60.125, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国亚马逊-2号_35, server: 15.164.228.182, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇭🇰 香港B Netflix, server: hkb.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
-  - {name: 挪威推荐, server: 122.9.54.40, port: 3947, type: ss, cipher: chacha20-ietf-poly1305, password: 853cc71c85896eb5658696f9a027815eb31ab225b1ccd8bbb6c033e6d016fe53}
-  - {name: 120.232.251.206:29998, server: 120.232.251.206, port: 29998, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 120.232.251.206:29980 2, server: 120.232.251.206, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇯🇵 JP_7700 @WangCai_1, server: xltc.ethash.as4812.com, port: 7700, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇩🇪 德国Linode-1号_26, server: 164.92.171.104, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 東京 A01, server: ygzyd.sub-nthu.com, port: 35001, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: jp-1.sub-nthu.com}
-  - {name: 🇭🇰 香港AZ-2号_30, server: 20.239.157.77, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: GB_8860 @WangCai_1, server: xltc.ethash.as4812.com, port: 8860, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  49, server: sgp002.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇭🇰 香港AZ-2号, server: 20.239.157.77, port: 28443, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
+  - {name: "🇭🇰 [DnsFree]香港 01", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 24085114-c2b0-47a0-80fe-d2a0d409aa5c}
+  - {name: 🇺🇲 US_35, server: 192.18.142.28, port: 55051, type: vmess, uuid: 3f7c0994-0b8c-49b7-e4d1-5af10d554c33, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港HGC, server: 210.0.159.90, port: 38443, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
+  - {name: "🇭🇰 [DnsFree]香港 02", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 63bc1528-72f0-4881-b19e-699ec248fbb4}
   - {name: 183.240.9.28:29984, server: 183.240.9.28, port: 29984, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
-  - {name: 🇬🇧 github.com/freefq - 英国  15, server: 185.167.117.171, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
-  - {name: 🇸🇬 新加坡DO-1号_16, server: 165.22.53.6, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇭🇰 HK_5513 @WangCai_1, server: xltc.ethash.as4812.com, port: 5513, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇭🇰 香港 | D | 流媒體解鎖 |, server: CMZHUYUN002.baiyun.pw, port: 5022, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
+  - {name: 120.232.251.206:29998, server: 120.232.251.206, port: 29998, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24, server: sg3.31vpn.com, port: 80, type: vmess, uuid: ff382d09-becd-41cb-8e4f-3e256b27de47, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/ntmdq/6267584ee4988/, headers: {Host: sg3.31vpn.com}}}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10, server: in-v1.sdgdn.com, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}}
+  - {name: 🇯🇵 github.com/freefq - 日本  3, server: 43.154.102.246, port: 39509, type: vmess, uuid: 9555680d-9857-4266-a97b-cb8b393d6e98, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK-B专线|香港, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: 13931d4f-e667-3688-9bbd-973b4fe161bb, sni: bnbq.jiashumao.net}
   - {name: 120.232.251.206:29998 2, server: 120.232.251.206, port: 29998, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /6129CFHR, headers: {Host: ru1.lolvps.xyz}}}
+  - {name: 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44, server: usa-sr-105.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2}
+  - {name: 🇯🇵 linode日本-亚马逊北京双线路(中转), server: bjaws.xxcv.cc, port: 20020, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
+  - {name: 183.240.9.28:29987, server: 183.240.9.28, port: 29987, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 美国  17, server: shop-one.defun.us, port: 443, type: trojan, password: OEfntmUGHmwQnNGr}
+  - {name: 🇸🇬 SG_6611 @WangCai_1, server: xltc.ethash.as4812.com, port: 6611, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz1.xmrth-node.xyz}}}
+  - {name: 🇸🇬 SG_6614 @WangCai_1, server: xltc.ethash.as4812.com, port: 6614, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 US_37, server: 192.18.138.167, port: 25250, type: vmess, uuid: 0a4164a6-9485-4ba5-f233-a936f8a1d023, alterId: 0, cipher: auto, tls: false}
+  - {name: 120.232.251.206:29979, server: 120.232.251.206, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
   - {name: 🇺🇲 US_8800 @WangCai_1, server: xltc.ethash.as4812.com, port: 8800, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇭🇰 香港E Netflix, server: hke.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国亚马逊-3号_36, server: 52.79.44.148, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇭🇰 HK_5501 @WangCai_1, server: xltc.ethash.as4812.com, port: 5501, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇭🇰 香港 | E | 流媒體解鎖 |, server: CMZHUYUN002.baiyun.pw, port: 5023, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
-  - {name: 🇯🇵 JP_1046, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国亚马逊-6号_39, server: 3.34.94.150, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 9, server: app.ssfree.ru, port: 443, type: vmess, uuid: 8388e9ea-c5de-11ec-bcd1-000017022008, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_34, server: 104.16.147.69, port: 443, type: vmess, uuid: c14d7a06-9e86-4dcb-8c0d-ade3d3361bad, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: yzjd03.7595333.workers.dev}}}
+  - {name: 🇩🇪 德国Linode-1号_26, server: 164.92.171.104, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇭🇰 香港HGC1_5×_13, server: 210.0.159.90, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17, server: hkaz3.xmrth-node.xyz, port: 12568, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: jc.ap.fastqvpn.com:29980, server: jc.ap.fastqvpn.com, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇨🇳 CN_466, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
+  - {name: 🇸🇬 SG_6600 @WangCai_1, server: xltc.ethash.as4812.com, port: 6600, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33, server: hk3.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk3.fdns.cloudlink123.com}}}
+  - {name: 🇯🇵 JP_7710 @WangCai_1, server: xltc.ethash.as4812.com, port: 7710, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  14, server: meet-one.defun.us, port: 443, type: trojan, password: INvx7sPho8PyTLS6}
+  - {name: 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20, server: jp001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇭🇰 HK_5500 @WangCai_1, server: xltc.ethash.as4812.com, port: 5500, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 挪威推荐, server: 122.9.54.40, port: 3947, type: ss, cipher: chacha20-ietf-poly1305, password: 853cc71c85896eb5658696f9a027815eb31ab225b1ccd8bbb6c033e6d016fe53}
+  - {name: "🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]", server: 122.9.54.58, port: 2266, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
+  - {name: 120.232.251.206:29996, server: 120.232.251.206, port: 29996, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083, server: V2-NODE-1-B.GFWAIRPORT.NET, port: 50001, type: vmess, uuid: f5e59d18-a23a-4b94-b484-33d188a0af21, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: V2-NODE-1-B.GFWAIRPORT.NET}}}
+  - {name: 🇺🇲 github.com/freefq - 美国  21, server: us003.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45, server: sg3.31vpn.com, port: 80, type: vmess, uuid: ff382d09-becd-41cb-8e4f-3e256b27de47, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/ntmdq/6267584ee4988/, headers: {Host: sg3.31vpn.com}}}
+  - {name: 🇭🇰 HK_5507 @WangCai_1, server: xltc.ethash.as4812.com, port: 5507, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇯🇵 JP_1085, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK_5516 @WangCai_1, server: xltc.ethash.as4812.com, port: 5516, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 120.232.251.206:29996 2, server: 120.232.251.206, port: 29996, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 183.240.9.30:29983, server: 183.240.9.30, port: 29983, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇭🇰 香港AZ-广东移动负载聚合双线(中转), server: gzyd.xxcv.cc, port: 20070, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06, server: 101.230.149.29, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8}}
+  - {name: 🇫🇷 FR_8863 @WangCai_1, server: xltc.ethash.as4812.com, port: 8863, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  13, server: us-03.pickaxe.sh, port: 443, type: trojan, password: Rq8MSfJZYw9pcmB3}
+  - {name: 🇨🇳 TW_1752, server: 61.222.202.140, port: 15789, type: vmess, uuid: 4535e708-5988-4377-a083-755ed60d8068, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港 E01, server: szdx.sub-nthu.com, port: 35002, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: hk-1.sub-nthu.com}
+  - {name: 🇫🇷 法国Do2号_24, server: 165.22.93.103, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
   - {name: 萨拉热窝a, server: 120.232.214.240, port: 3223, type: ss, cipher: chacha20-ietf-poly1305, password: 638d06e1a5b00911c29e526d4f2e50e7c0e3b20d14a37cff6ef1c2d8dfd59d72}
-  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 31, server: freestarway.tk, port: 443, type: vmess, uuid: 68de58a5-2f9f-45e9-cb64-2d87fdf5f031, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: freestarway.tk}}}
-  - {name: 🇨🇳 台湾Hinet_33, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21, server: 120.240.48.20, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
+  - {name: "PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]", server: 122.9.54.58, port: 3281, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
+  - {name: 🇰🇷 韩国亚马逊-5号_38, server: 52.78.89.199, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇨🇳 TW_5555 @WangCai_1, server: xltc.ethash.as4812.com, port: 5555, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  4, server: 192.18.142.28, port: 55051, type: vmess, uuid: 3f7c0994-0b8c-49b7-e4d1-5af10d554c33, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41, server: 104.16.147.69, port: 443, type: vmess, uuid: c14d7a06-9e86-4dcb-8c0d-ade3d3361bad, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: yzjd03.7595333.workers.dev}}}
+  - {name: 🇸🇬 新加坡_R_441, server: ieplszhk-sz.qqgg.work, port: 52306, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 37380:k4VJ9SyAu3, obfs-param: ajax.microsoft.com}
+  - {name: 🇫🇷 法国Do1号_23, server: 159.223.29.152, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg}
+  - {name: 🇺🇲 github.com/freefq - 美国  6, server: shop-two.defun.us, port: 8080, type: trojan, password: OzKXGbFNHwAurRQ0}
+  - {name: IN_8870 @WangCai_1, server: xltc.ethash.as4812.com, port: 8870, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  9, server: 129.146.250.54, port: 58899, type: vmess, uuid: bcd4ac9d-8414-4468-c099-e1df78861917, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  12, server: docs.defun.us, port: 443, type: trojan, password: WEMagdSekdGBxh6g}
+  - {name: 🇺🇲 github.com/freefq - 美国3COM公司企业网 28, server: 152.67.221.109, port: 15479, type: vmess, uuid: 25a086a2-31a6-45b8-afe5-147726de370c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19, server: hkaz3.xmrth-node.xyz, port: 12567, type: vmess, uuid: ebb8920a-63c4-368f-b3fd-3794f4fa1c98, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: 🇨🇳 TW_5564 @WangCai_1, server: xltc.ethash.as4812.com, port: 5564, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 183.240.9.28:29979, server: 183.240.9.28, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 美国  42, server: aling.gq, port: 443, type: trojan, password: f727337d-52af-4cf9-b260-26ac9a23ddc2}
+  - {name: 🇭🇰 香港HGC 2, server: 210.0.159.90, port: 38888, type: trojan, password: a0dac702-8ab0-40e7-a8a1-1dd7d8fb65e0, sni: huayun.xyz}
+  - {name: 🇯🇵 JP_1081, server: 207.148.106.145, port: 8650, type: vmess, uuid: 29430b3d-f83f-3c74-94a2-e8c1a459219f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: 207.148.106.145}}}
+  - {name: 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09, server: 119.147.20.236, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}}
+  - {name: GB_8860 @WangCai_1, server: xltc.ethash.as4812.com, port: 8860, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇰🇷 韩国亚马逊-1号_34, server: 13.124.60.125, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 台灣 A01, server: ygzyd.sub-nthu.com, port: 35005, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: tw-1.sub-nthu.com}
+  - {name: 🇯🇵 JP_1080, server: 146.56.116.190, port: 45177, type: vmess, uuid: c2f1ae57-7ada-4bac-f510-a8336c8708dd, alterId: 0, cipher: auto, tls: false}
+  - {name: 東京 A01, server: ygzyd.sub-nthu.com, port: 35001, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: jp-1.sub-nthu.com}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467, server: fs.keaiyun.top, port: 55154, type: vmess, uuid: 048da825-d468-3a29-b015-2d60886f830d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 US_8804 @WangCai_1, server: xltc.ethash.as4812.com, port: 8804, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇳🇱 荷兰a, server: 122.9.54.58, port: 3281, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
+  - {name: 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34, server: uk001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇯🇵 JP_1082, server: 18.181.176.32, port: 17465, type: vmess, uuid: 8a74fb3c-fce1-4e28-ee11-4b5368cb2ad7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 東京 B01, server: shlt.sub-nthu.com, port: 35001, type: trojan, password: 2eb3d644-0151-47af-ac39-7a8fc6a7acb6, sni: jp-1.sub-nthu.com}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36, server: 104.16.147.69, port: 443, type: vmess, uuid: dce29820-0a9b-416a-8d52-f671fff7a226, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: yzjd02.7595333.workers.dev}}}
+  - {name: 🇺🇲 US_8810 @WangCai_1, server: xltc.ethash.as4812.com, port: 8810, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇯🇵 Linode日本2号-湖南三线-SS_10, server: 113.240.72.244, port: 22005, type: ss, cipher: chacha20-ietf-poly1305, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd}
+  - {name: 🇯🇵 JP_7700 @WangCai_1, server: xltc.ethash.as4812.com, port: 7700, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇳🇱 荷兰b, server: 122.9.62.6, port: 3281, type: ss, cipher: chacha20-ietf-poly1305, password: 8a8e405848b39f173e22c44437aba4ef2a4edf3a8cacae1837eca32c42da8569}
+  - {name: 🇸🇬 SG_6618 @WangCai_1, server: xltc.ethash.as4812.com, port: 6618, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 全球直连①, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true}
+  - {name: 🇺🇲 github.com/freefq - 美国  19, server: shop-three.defun.us, port: 443, type: trojan, password: UvhTLyCf27fjxqPQ}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084, server: 158.101.157.185, port: 37757, type: vmess, uuid: 614f51dd-c038-4d93-bfab-b581f40d58bf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇻🇳 VN_8833 @WangCai_1, server: xltc.ethash.as4812.com, port: 8833, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇯🇵 linode日本-1号_20, server: 139.162.124.250, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国亚马逊-4号_37, server: 54.180.139.211, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国, server: share-1mbps.fanqiangvpn.com, port: 80, type: vmess, uuid: ee8d15c0-927d-497a-ba84-65447a790f56, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: share-1mbps.fanqiangvpn.com}}}
+  - {name: 🇭🇰 香港AZ-2号_30, server: 20.239.157.77, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
+  - {name: 183.240.9.28:29983, server: 183.240.9.28, port: 29983, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: "🇭🇰 [DnsFree]香港 01 2", server: 20.187.104.186, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 63bc1528-72f0-4881-b19e-699ec248fbb4}
+  - {name: github.com/freefq - 浙江省衢州市移动 51, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: a992be42-bed4-3037-8788-9e860cd635d3, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
+  - {name: 🇺🇲 github.com/freefq - 美国  52, server: zones.defun.us, port: 443, type: trojan, password: lpmMwDKeBbKKPq8K}
+  - {name: 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip, server: use1a1.sakurajimamai.love, port: 10086, type: vmess, uuid: 2da6f020-ae4d-30e5-b218-e8837a57135e, alterId: 0, cipher: chacha20-poly1305, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 美国  18, server: us001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇭🇰 HK_5504 @WangCai_1, server: xltc.ethash.as4812.com, port: 5504, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464, server: gy.sharecentrepro.tk, port: 10001, type: vmess, uuid: 6731a7a4-cac0-4218-d3e7-a4fe8c933b5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xrenblog, headers: {Host: sgp.xrenblog.com}}}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 46, server: freestarway.tk, port: 443, type: vmess, uuid: 68de58a5-2f9f-45e9-cb64-2d87fdf5f031, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: freestarway.tk}}}
+  - {name: 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27, server: 213.183.51.172, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX}
+  - {name: 🇭🇰 HK_18, server: hkaz3.xmrth-node.xyz, port: 12567, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: 🇯🇵 JP_20, server: 146.56.102.175, port: 54312, type: vmess, uuid: bd2990ce-dd8e-4b62-c75d-5c793906db7a, alterId: 0, cipher: auto, tls: false}
+  - {name: "网址: upyun.online/reg", server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true}
+  - {name: 🇺🇲 US_8807 @WangCai_1, server: xltc.ethash.as4812.com, port: 8807, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇭🇰 HK_5519 @WangCai_1, server: xltc.ethash.as4812.com, port: 5519, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇨🇳 github.com/freefq - 上海市电信 39, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 120.232.251.206:29994, server: 120.232.251.206, port: 29994, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 美国  43, server: sgp001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转), server: bjaws.xxcv.cc, port: 20010, type: trojan, password: 5fec5154-2d25-4422-85a2-be888283a736, sni: huayun.xyz}
+  - {name: 🇰🇷 韩国亚马逊-3号_36, server: 52.79.44.148, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇸🇬 SG_6605 @WangCai_1, server: xltc.ethash.as4812.com, port: 6605, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇨🇳 TW_1751, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 61.222.202.140}}}
+  - {name: 🇭🇰 HK_5510 @WangCai_1, server: xltc.ethash.as4812.com, port: 5510, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_32, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 25, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: github.com/freefq - 湖南省长沙市电信 47, server: in-v1.sdgdn.com, port: 50401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-v1.sdgdn.com}}}
+  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750, server: c27821f.rb.cloudflare.systems, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /s/c27821f.fm.icloud.com:16708, headers: {Host: c27821f.rb.cloudflare.systems}}}
+  - {name: 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2, server: CMZHUYUN002.baiyun.pw, port: 5021, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
+  - {name: 🇹🇷 伊斯坦布尔c, server: 122.9.62.10, port: 4720, type: ss, cipher: chacha20-ietf-poly1305, password: 573d4c8f31e9e003ea3cb800aa29f00a4c744f63ed57a807cbbc6e725db1e21d}
+  - {name: 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38, server: sg-sr-114.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2}
+  - {name: 🇭🇰 香港E TLS, server: hke.quickconnect.buzz, port: 443, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 TW_5567 @WangCai_1, server: xltc.ethash.as4812.com, port: 5567, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇯🇵 github.com/freefq - 日本  48, server: 146.56.102.175, port: 54312, type: vmess, uuid: bd2990ce-dd8e-4b62-c75d-5c793906db7a, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 31, server: app.ssfree.ru, port: 443, type: vmess, uuid: add31a9e-c6a7-11ec-a947-000017022008, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}}
+  - {name: 🇸🇬 SG_6608 @WangCai_1, server: xltc.ethash.as4812.com, port: 6608, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  5, server: 192.18.138.167, port: 25250, type: vmess, uuid: 0a4164a6-9485-4ba5-f233-a936f8a1d023, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡DO-1号_16, server: 165.22.53.6, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 16, server: gz-1.jiasugou.one, port: 15003, type: vmess, uuid: 985eb001-56be-3bb9-927a-f3b9c6376a49, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn/news, headers: {Host: www.msn.cn}}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462, server: gz-1.jiasugou.one, port: 15000, type: vmess, uuid: 985eb001-56be-3bb9-927a-f3b9c6376a49, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn/news, headers: {Host: www.msn.cn}}}
+  - {name: 🇯🇵 JP_7713 @WangCai_1, server: xltc.ethash.as4812.com, port: 7713, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇯🇵 JP_7707 @WangCai_1, server: xltc.ethash.as4812.com, port: 7707, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇭🇰 HK_5501 @WangCai_1, server: xltc.ethash.as4812.com, port: 5501, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇭🇰 香港A Netflix, server: hka.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: gd.189.cn}}}
+  - {name: 120.232.251.206:29980, server: 120.232.251.206, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22, server: us-01.pickaxe.sh, port: 443, type: trojan, password: VQcup0dd7ulkb1pV}
+  - {name: 🇬🇧 github.com/freefq - 英国  24, server: de-01.fireplay.io, port: 443, type: trojan, password: lo3TmsNaLWUXpuoE}
+  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916, server: us1.lolvps.xyz, port: 60060, type: vmess, uuid: 95886c76-9207-48bd-9e64-d1422e75ad89, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /AY920UMR, headers: {Host: us1.lolvps.xyz}}}
+  - {name: 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30, server: deu001.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
   - {name: 🇯🇵 JP_7704 @WangCai_1, server: xltc.ethash.as4812.com, port: 7704, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
-  - {name: 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18, server: 152.70.49.174, port: 55988, type: vmess, uuid: 2c644a6a-5817-40b2-b149-2f3ac7eb2447, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  32, server: miner-one.pickaxe.sh, port: 443, type: trojan, password: 8JYTzmWdnn5Ilft0}
+  - {name: 🇭🇰 香港 | E | 流媒體解鎖 |, server: CMZHUYUN002.baiyun.pw, port: 5023, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
+  - {name: 🇨🇳 台湾Hinet_33, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 120.232.251.206:29980 2, server: 120.232.251.206, port: 29980, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇭🇰 HongKong 02, server: api-gzct.malibaba.xyz, port: 10081, type: trojan, password: 0bf3107d-9fad-3073-8b86-c9cde7ad1f94, sni: hk2.daydaygeek.icu}
+  - {name: MX_8866 @WangCai_1, server: xltc.ethash.as4812.com, port: 8866, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  11, server: miner-two.pickaxe.sh, port: 443, type: trojan, password: YzJI2mQftXqA6ZH4}
+  - {name: 🇺🇲 US_28, server: 152.67.221.109, port: 15479, type: vmess, uuid: 25a086a2-31a6-45b8-afe5-147726de370c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 DE_8855 @WangCai_1, server: xltc.ethash.as4812.com, port: 8855, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 github.com/freefq - 美国  7, server: blogs.defun.us, port: 443, type: trojan, password: 0STIv0ePoRzjxFTV}
+  - {name: 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2}
+  - {name: 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2, server: hkaz4.xmrth-node.xyz, port: 13302, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz4.xmrth-node.xyz}}}
+  - {name: 🇭🇰 香港 | G |, server: CMZHUYUN002.baiyun.pw, port: 5025, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
+  - {name: github.com/freefq - 广东省汕头市移动 8, server: centralchina1.cloudlink123.com, port: 37003, type: ss, cipher: aes-128-gcm, password: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09}
+  - {name: 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463, server: gz-1.jiasugou.one, port: 15003, type: vmess, uuid: 985eb001-56be-3bb9-927a-f3b9c6376a49, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn/news, headers: {Host: www.msn.cn}}}
+  - {name: 🇯🇵 linode日本-2号_21, server: 172.104.96.170, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国亚马逊-6号_39, server: 3.34.94.150, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇭🇰 github.com/freefq - 香港特别行政区 26, server: hkaz3.xmrth-node.xyz, port: 12567, type: vmess, uuid: ebb8920a-63c4-368f-b3fd-3794f4fa1c98, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz3.xmrth-node.xyz}}}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_31, server: hk3.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk3.fdns.cloudlink123.com}}}
+  - {name: 萨拉热窝b, server: 120.232.214.153, port: 3223, type: ss, cipher: chacha20-ietf-poly1305, password: 638d06e1a5b00911c29e526d4f2e50e7c0e3b20d14a37cff6ef1c2d8dfd59d72}
+  - {name: 🇺🇲 github.com/freefq - 美国Microsoft公司 37, server: jp02-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 1574e157-8b18-3ec3-9b68-fc744fe8fdeb, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}}
+  - {name: 120.232.251.206:29979 2, server: 120.232.251.206, port: 29979, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 120.232.251.206:29994 2, server: 120.232.251.206, port: 29994, type: http, username: 442993652168396800, password: 2ef91648-089f-4c81-b34d-06f072ec51dd, tls: true}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_33, server: 104.16.147.69, port: 443, type: vmess, uuid: dce29820-0a9b-416a-8d52-f671fff7a226, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: yzjd02.7595333.workers.dev}}}
+  - {name: 🇨🇳 台湾Hinet-4号线路_8, server: gdyd.xxcv.cc, port: 36660, type: vmess, uuid: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: "%7B%22host%22:%22huayun.xyz%22%7D"}}}
+  - {name: 🇯🇵 日本E Netflix, server: jpe.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
+  - {name: 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36, server: hkaz4.xmrth-node.xyz, port: 13302, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: github.com/freefq - 湖北省宜昌市联通 53, server: sg2603.cloudmatrix.xyz, port: 2603, type: vmess, uuid: 479a9dbc-b896-3fc7-8f68-c26c92f3ae2a, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: t.me/vpnhat}}}
+  - {name: "🇭🇰 [DnsFree]香港 02 2", server: 20.187.104.186, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 24085114-c2b0-47a0-80fe-d2a0d409aa5c}
+  - {name: 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30, server: hkaz1.xmrth-node.xyz, port: 10033, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz1.xmrth-node.xyz}}}
+  - {name: 🇯🇵 日本D Netflix, server: jpd.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
+  - {name: ID_8829 @WangCai_1, server: xltc.ethash.as4812.com, port: 8829, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇺🇲 US_29, server: hkaz4.xmrth-node.xyz, port: 10992, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: 🇭🇰 github.com/freefq - 香港特别行政区 15, server: hkaz3.xmrth-node.xyz, port: 12568, type: vmess, uuid: ececdd8d-d257-3e9b-a770-9abaf61e4920, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: hkaz3.xmrth-node.xyz}}}
+  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753, server: c27821f.rd.cloudflare.systems, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /s/c27821f.fm.icloud.com:16708, headers: {Host: c27821f.rd.cloudflare.systems}}}
   - {name: 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18, server: gdyd.xxcv.cc, port: 42001, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国亚马逊-2号_35, server: 15.164.228.182, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡 | D |, server: CMZHUYUN.baiyun.pw, port: 5004, type: ss, cipher: aes-256-gcm, password: 65d9c835-c06e-4baa-99fc-eb6f7e22f3fc}
+  - {name: 🇺🇲 US_8814 @WangCai_1, server: xltc.ethash.as4812.com, port: 8814, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇭🇰 香港AZ-1号_29, server: 20.205.98.64, port: 28443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, skip-cert-verify: true}
+  - {name: 🇨🇳 github.com/freefq - 上海市电信 40, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
+  - {name: 🇺🇲 github.com/freefq - 美国  10, server: us002.laxiyun.com, port: 10086, type: trojan, password: 5efe3c05-b123-4688-92b9-f6dc5099811f}
+  - {name: 🇹🇷 伊斯坦布尔d, server: 122.9.62.37, port: 4720, type: ss, cipher: chacha20-ietf-poly1305, password: 573d4c8f31e9e003ea3cb800aa29f00a4c744f63ed57a807cbbc6e725db1e21d}
+  - {name: 🇭🇰 香港B Netflix, server: hkb.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_27, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 TW_5561 @WangCai_1, server: xltc.ethash.as4812.com, port: 5561, type: ss, cipher: aes-256-gcm, password: a347951c-211e-4a8c-bb9c-7f7ed5802239}
+  - {name: 🇭🇰 香港E Netflix, server: hke.quickconnect.buzz, port: 80, type: vmess, uuid: 1c9a05c2-1e06-45e1-a94b-b6910b2ae29c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29, server: sg-sr-116.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台灣 A01
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 🇭🇰 香港HGC
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇭🇰 香港 E01
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK-B专线|香港
-      - 🇭🇰 香港AZ-1号_29
       - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 🇭🇰 HK-B专线|香港
+      - 🇭🇰 香港HGC1_5×_13
       - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 🇭🇰 香港B Netflix
+      - 🇭🇰 香港 E01
+      - 🇭🇰 香港HGC 2
+      - 台灣 A01
       - 🇭🇰 香港AZ-2号_30
-      - 🇭🇰 香港E Netflix
+      - 🇭🇰 [DnsFree]香港 01 2
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇭🇰 香港E TLS
+      - 🇭🇰 香港A Netflix
       - 🇭🇰 香港 | E | 流媒體解鎖 |
       - 🇨🇳 台湾Hinet_33
+      - 🇭🇰 香港 | G |
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇭🇰 香港AZ-1号_29
+      - 🇭🇰 香港B Netflix
+      - 🇭🇰 香港E Netflix
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
       - 🎯 全球直连
   - name: 🍎 苹果服务
     type: select
@@ -1123,182 +1293,210 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - ♻️ 自动选择
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1314,182 +1512,210 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇲 github.com/freefq - 美国  3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
-      - 🇺🇲 github.com/freefq - 美国  32
-      - 183.240.9.28:29983
-      - 🇭🇰 HK_5513 @WangCai_1
-      - 🇹🇷 伊斯坦布尔c
-      - 台灣 A01
-      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_441
-      - 🇯🇵 JP_1045
-      - 🇯🇵 JP_1048
-      - 🇨🇳 台湾Hinet-4号线路_8
-      - 🇭🇰 香港 | D | 流媒體解鎖 |
-      - 120.232.251.206:29979
-      - 🇭🇰 HK_882
-      - 🇫🇷 法国Do1号_23
-      - 120.232.251.206:29996
-      - 🇺🇲 github.com/freefq - 美国  6
-      - 🇭🇰 香港HGC
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇸🇬 SG_6611 @WangCai_1
-      - 全球直连①
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇸🇬 SG_6618 @WangCai_1
-      - 183.240.9.28:29987
-      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
-      - 🇭🇰 香港A Netflix
-      - 🇭🇰 香港E TLS
-      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
-      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
-      - 🇭🇰 HongKong 02
-      - 🇺🇲 github.com/freefq - 美国  24
-      - 🇸🇬 SG_6614 @WangCai_1
       - 🇸🇬 新加坡 E01
-      - 萨拉热窝b
-      - 🇨🇳 github.com/freefq - 上海市电信 25
-      - 183.240.9.30:29983
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
-      - 🇯🇵 Linode日本2号-湖南三线-SS_10
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 14
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇭🇰 HK_5504 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 01
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_16
-      - 🇯🇵 JP_7713 @WangCai_1
-      - 🇳🇱 荷兰b
-      - 🇨🇳 CN_438
-      - 🇨🇳 TW_5564 @WangCai_1
-      - 🇭🇰 香港HGC1_5×_13
-      - 🇺🇲 US_8804 @WangCai_1
-      - 🇸🇬 SG_6605 @WangCai_1
-      - 🇯🇵 JP_7707 @WangCai_1
-      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 11
-      - 🇯🇵 JP_7710 @WangCai_1
-      - 🇨🇳 github.com/freefq - 湖南省长沙市腾讯云 28
-      - 🇨🇳 TW_1652
-      - 🇹🇷 伊斯坦布尔d
-      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - 120.232.251.206:29994
-      - 🇨🇳 Relay_🇨🇳CN-🇬🇧GB_11
-      - 🇭🇰 [DnsFree]香港 01 2
-      - 🇺🇲 US_8810 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_14
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_30
-      - 🇫🇷 FR_8863 @WangCai_1
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 10
-      - 🇺🇲 US_8814 @WangCai_1
-      - 🇭🇰 香港 E01
-      - 🇸🇬 SG_6608 @WangCai_1
-      - 183.240.9.28:29979
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_881
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_439
-      - MX_8866 @WangCai_1
-      - 🇭🇰 香港 | G |
-      - 🇭🇰 Pool_🇭🇰HK_883
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_436
-      - 🇭🇰 HK_5510 @WangCai_1
-      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 16
-      - 🇺🇲 github.com/freefq - 美国  22
-      - 🇩🇪 DE_8855 @WangCai_1
-      - 🇯🇵 linode日本-2号_21
-      - 🇨🇳 TW_5567 @WangCai_1
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_20
-      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_10
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_28
-      - "网址: upyun.online/reg"
-      - 🇭🇰 HK_5500 @WangCai_1
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_12
-      - 🇺🇲 github.com/freefq - 美国  12
-      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 27
-      - 🇻🇳 VN_8833 @WangCai_1
-      - 🇭🇰 [DnsFree]香港 02
-      - 🇯🇵 日本D Netflix
-      - 🇺🇲 github.com/freefq - 美国  4
-      - 🇨🇳 github.com/freefq - 上海市电信 20
-      - ID_8829 @WangCai_1
-      - 🇸🇬 SG_6600 @WangCai_1
-      - github.com/freefq - 湖北省宜昌市联通 5
-      - 🇭🇰 香港HGC 2
-      - 🇭🇰 [DnsFree]香港 02 2
-      - 🇭🇰 HK_5519 @WangCai_1
-      - 🇨🇳 TW_1653
-      - 🇭🇰 HK-B专线|香港
-      - 120.232.251.206:29996 2
-      - 🇸🇬 新加坡 | D |
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_437
-      - 🇭🇰 香港AZ-1号_29
-      - 120.232.251.206:29994 2
-      - 🇺🇲 US_8807 @WangCai_1
-      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
-      - 🇨🇳 Relay_🇨🇳CN-🏁ZZ_440
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_09
-      - 🇨🇳 github.com/freefq - 广东省深圳市腾讯云 8
-      - 120.232.251.206:29980
-      - 🇨🇳 TW_5555 @WangCai_1
-      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_25
-      - github.com/freefq - 湖南省长沙市电信 23
-      - 🇺🇲 US_32
-      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
-      - jc.ap.fastqvpn.com:29980
-      - 🇭🇰 香港AZ-2号
-      - 🇯🇵 JP_1047
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_13
-      - 東京 B01
-      - 🇭🇰 HK_5507 @WangCai_1
-      - 🇰🇷 韩国亚马逊-4号_37
-      - 🇯🇵 日本E Netflix
       - 🇺🇲 US_8818 @WangCai_1
-      - IN_8870 @WangCai_1
-      - 🇫🇷 法国Do2号_24
-      - 🇳🇱 荷兰a
-      - 🇸🇬 新加坡_R_441
-      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_15
-      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_29
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_31
-      - 🇭🇰 HK_5516 @WangCai_1
-      - 🇨🇦 github.com/freefq - 加拿大  29
-      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
-      - 120.232.251.206:29979 2
-      - 🇨🇳 TW_5561 @WangCai_1
-      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
-      - 🇺🇲 github.com/freefq - 美国Microsoft公司 30
-      - 🇰🇷 韩国亚马逊-5号_38
-      - 🇯🇵 linode日本-1号_20
-      - 🇰🇷 韩国亚马逊-1号_34
-      - 🇰🇷 韩国亚马逊-2号_35
-      - 🇭🇰 香港B Netflix
-      - 挪威推荐
-      - 120.232.251.206:29998
-      - 120.232.251.206:29980 2
-      - 🇯🇵 JP_7700 @WangCai_1
-      - 🇩🇪 德国Linode-1号_26
-      - 東京 A01
-      - 🇭🇰 香港AZ-2号_30
-      - GB_8860 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  49
+      - 🇭🇰 香港AZ-2号
+      - 🇭🇰 [DnsFree]香港 01
+      - 🇺🇲 US_35
+      - 🇭🇰 香港HGC
+      - 🇭🇰 [DnsFree]香港 02
       - 183.240.9.28:29984
-      - 🇬🇧 github.com/freefq - 英国  15
-      - 🇸🇬 新加坡DO-1号_16
+      - 🇭🇰 HK_5513 @WangCai_1
+      - 🇭🇰 香港 | D | 流媒體解鎖 |
+      - 120.232.251.206:29998
+      - 🇸🇬 Relay_🇸🇬SG-🇨🇦CA_24
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_07
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_10
+      - 🇯🇵 github.com/freefq - 日本  3
+      - 🇭🇰 HK-B专线|香港
       - 120.232.251.206:29998 2
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 1
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 44
+      - 🇯🇵 linode日本-亚马逊北京双线路(中转)
+      - 183.240.9.28:29987
+      - 🇺🇲 github.com/freefq - 美国  17
+      - 🇸🇬 SG_6611 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 35
+      - 🇸🇬 SG_6614 @WangCai_1
+      - 🇺🇲 US_37
+      - 120.232.251.206:29979
       - 🇺🇲 US_8800 @WangCai_1
-      - 🇭🇰 香港E Netflix
-      - 🇰🇷 韩国亚马逊-3号_36
-      - 🇭🇰 HK_5501 @WangCai_1
-      - 🇭🇰 香港 | E | 流媒體解鎖 |
-      - 🇯🇵 JP_1046
-      - 🇰🇷 韩国亚马逊-6号_39
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 9
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_34
+      - 🇩🇪 德国Linode-1号_26
+      - 🇭🇰 香港HGC1_5×_13
+      - 🇩🇪 Relay_🇭🇰HK-🇩🇪DE_17
+      - jc.ap.fastqvpn.com:29980
+      - 🇨🇳 CN_466
+      - 🇸🇬 SG_6600 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 33
+      - 🇯🇵 JP_7710 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  14
+      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
+      - 🇭🇰 HK_5500 @WangCai_1
+      - 挪威推荐
+      - 🇳🇱 PX - 荷兰 - 鹿特丹 [PremiumA] [IPLC] [Disney ] [Netflix]
+      - 120.232.251.206:29996
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1083
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 45
+      - 🇭🇰 HK_5507 @WangCai_1
+      - 🇯🇵 JP_1085
+      - 🇭🇰 HK_5516 @WangCai_1
+      - 120.232.251.206:29996 2
+      - 183.240.9.30:29983
+      - 🇭🇰 香港AZ-广东移动负载聚合双线(中转)
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_06
+      - 🇫🇷 FR_8863 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  13
+      - 🇨🇳 TW_1752
+      - 🇭🇰 香港 E01
+      - 🇫🇷 法国Do2号_24
       - 萨拉热窝a
+      - PD - 荷蘭 - 鹿特丹 [BGPA] [SVIP] [Disney ] [Netflix]
+      - 🇰🇷 韩国亚马逊-5号_38
+      - 🇨🇳 TW_5555 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 41
+      - 🇸🇬 新加坡_R_441
+      - 🇫🇷 法国Do1号_23
+      - github.com/freefq - 捷克布拉格Friendhosting有限责任公司 50
+      - 🇺🇲 github.com/freefq - 美国  6
+      - IN_8870 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 🇺🇲 github.com/freefq - 美国3COM公司企业网 28
+      - 🇭🇰 Relay_🇭🇰HK-🇸🇬SG_19
+      - 🇨🇳 TW_5564 @WangCai_1
+      - 183.240.9.28:29979
+      - 🇺🇲 github.com/freefq - 美国  42
+      - 🇭🇰 香港HGC 2
+      - 🇯🇵 JP_1081
+      - 🇩🇪 Relay_🇨🇳CN-🇩🇪DE_09
+      - GB_8860 @WangCai_1
+      - 🇰🇷 韩国亚马逊-1号_34
+      - 台灣 A01
+      - 🇯🇵 JP_1080
+      - 東京 A01
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_467
+      - 🇺🇲 US_8804 @WangCai_1
+      - 🇳🇱 荷兰a
+      - 🇬🇧 github.com/freefq - 英国伦敦DigitalOcean数据中心 34
+      - 🇯🇵 JP_1082
+      - 東京 B01
+      - 🇺🇲 github.com/freefq - 美国CloudFlare公司CDN节点 36
+      - 🇺🇲 US_8810 @WangCai_1
+      - 🇯🇵 Linode日本2号-湖南三线-SS_10
+      - 🇯🇵 JP_7700 @WangCai_1
+      - 🇳🇱 荷兰b
+      - 🇸🇬 SG_6618 @WangCai_1
+      - 全球直连①
+      - 🇺🇲 github.com/freefq - 美国  19
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_1084
+      - 🇻🇳 VN_8833 @WangCai_1
+      - 🇯🇵 linode日本-1号_20
+      - 🇰🇷 韩国亚马逊-4号_37
+      - 🇺🇲 7| 备用 |0.001x|低带宽分享转卖|1兆|无限设备|美国
+      - 🇭🇰 香港AZ-2号_30
+      - 🇨🇳 Relay_🇨🇳CN-🇨🇳CN_465
+      - 183.240.9.28:29983
+      - 🇭🇰 [DnsFree]香港 01 2
+      - github.com/freefq - 浙江省衢州市移动 51
+      - 🇺🇲 github.com/freefq - 美国  52
+      - 🇺🇲 美国弗吉尼亚 | 壹 | StarTrip
+      - 🇺🇲 github.com/freefq - 美国  18
+      - 🇭🇰 HK_5504 @WangCai_1
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_464
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 46
+      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 27
+      - 🇭🇰 HK_18
+      - 🇯🇵 JP_20
+      - "网址: upyun.online/reg"
+      - 🇺🇲 US_8807 @WangCai_1
+      - 🇭🇰 HK_5519 @WangCai_1
+      - 🇨🇳 github.com/freefq - 上海市电信 39
+      - 120.232.251.206:29994
+      - 🇺🇲 github.com/freefq - 美国  43
+      - 🇸🇬 北京亚马逊-4负载均衡聚合-新加坡DO(中转)
+      - 🇰🇷 韩国亚马逊-3号_36
+      - 🇸🇬 SG_6605 @WangCai_1
+      - 🇨🇳 TW_1751
+      - 🇭🇰 HK_5510 @WangCai_1
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_32
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 25
+      - github.com/freefq - 湖南省长沙市电信 47
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1750
+      - 🇭🇰 香港 | C | HKT | 動態 | 原生 | X2
+      - 🇹🇷 伊斯坦布尔c
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 38
+      - 🇭🇰 香港E TLS
+      - 🇨🇳 TW_5567 @WangCai_1
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇺🇲 github.com/freefq - 美国CloudFlare节点 31
-      - 🇨🇳 台湾Hinet_33
-      - 🇨🇳 github.com/freefq - 广东省广州市黄埔区珠江宽频 21
+      - 🇸🇬 SG_6608 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  5
+      - 🇸🇬 新加坡DO-1号_16
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_462
+      - 🇯🇵 JP_7713 @WangCai_1
+      - 🇯🇵 JP_7707 @WangCai_1
+      - 🇭🇰 HK_5501 @WangCai_1
+      - 🇭🇰 香港A Netflix
+      - 120.232.251.206:29980
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶DMIT数据中心 22
+      - 🇬🇧 github.com/freefq - 英国  24
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_916
+      - 🇩🇪 github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 30
       - 🇯🇵 JP_7704 @WangCai_1
-      - 🇩🇪 github.com/freefq - 美国德克萨斯州达拉斯Oracle(Zenedge) 18
+      - 🇺🇲 github.com/freefq - 美国  32
+      - 🇭🇰 香港 | E | 流媒體解鎖 |
+      - 🇨🇳 台湾Hinet_33
+      - 120.232.251.206:29980 2
+      - 🇭🇰 HongKong 02
+      - MX_8866 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  11
+      - 🇺🇲 US_28
+      - 🇩🇪 DE_8855 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国  7
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 23
+      - 🇺🇲 github.com/freefq - 美国Microsoft数据中心 2
+      - 🇭🇰 香港 | G |
+      - github.com/freefq - 广东省汕头市移动 8
+      - 🇸🇬 Relay_🇨🇳CN-🇸🇬SG_463
+      - 🇯🇵 linode日本-2号_21
+      - 🇰🇷 韩国亚马逊-6号_39
+      - 🇭🇰 github.com/freefq - 香港特别行政区 26
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_31
+      - 萨拉热窝b
+      - 🇺🇲 github.com/freefq - 美国Microsoft公司 37
+      - 120.232.251.206:29979 2
+      - 120.232.251.206:29994 2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_33
+      - 🇨🇳 台湾Hinet-4号线路_8
+      - 🇯🇵 日本E Netflix
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_08
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_36
+      - github.com/freefq - 湖北省宜昌市联通 53
+      - 🇭🇰 [DnsFree]香港 02 2
+      - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_30
+      - 🇯🇵 日本D Netflix
+      - ID_8829 @WangCai_1
+      - 🇺🇲 US_29
+      - 🇭🇰 github.com/freefq - 香港特别行政区 15
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_1753
       - 🇸🇬 广东移动负载均衡聚合-新加坡DO双线路_18
+      - 🇰🇷 韩国亚马逊-2号_35
+      - 🇸🇬 新加坡 | D |
+      - 🇺🇲 US_8814 @WangCai_1
+      - 🇭🇰 香港AZ-1号_29
+      - 🇨🇳 github.com/freefq - 上海市电信 40
+      - 🇺🇲 github.com/freefq - 美国  10
+      - 🇹🇷 伊斯坦布尔d
+      - 🇭🇰 香港B Netflix
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_27
+      - 🇨🇳 TW_5561 @WangCai_1
+      - 🇭🇰 香港E Netflix
+      - 🇺🇲 github.com/freefq - 美国亚利桑那州斯科茨代尔市Go Daddy集团公司 29
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
