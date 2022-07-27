@@ -33,8 +33,8 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
               <span class="cf-error-type">Error</span>
               <span class="cf-error-code">502</span>
             </h1>
-            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 73054859abc55233 &bull;</span>
-            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2022-07-25 13:36:07 UTC</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 7315c8ab9826aa6a &bull;</span>
+            <span class="inline-block sm:block font-mono text-15 lg:text-sm lg:leading-relaxed">2022-07-27 13:39:55 UTC</span>
             <h2 class="text-gray-600 leading-1.3 text-3xl font-light">Bad gateway</h2>
         </header>
         
@@ -57,7 +57,7 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
     <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
     <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
   </div>
-  <span class="md:block w-full truncate">Los Angeles</span>
+  <span class="md:block w-full truncate">Dallas</span>
   <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">Cloudflare</h3>
   <span class="leading-1.3 text-2xl text-green-success">Working</span>
 </div>
@@ -106,12 +106,12 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 
         <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
   <p class="text-13">
-    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">73054859abc55233</strong></span>
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7315c8ab9826aa6a</strong></span>
     <span class="cf-footer-separator sm:hidden">&bull;</span>
     <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
       Your IP:
       <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
-      <span class="hidden" id="cf-footer-ip">20.163.112.40</span>
+      <span class="hidden" id="cf-footer-ip">13.66.16.206</span>
       <span class="cf-footer-separator sm:hidden">&bull;</span>
     </span>
     <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
