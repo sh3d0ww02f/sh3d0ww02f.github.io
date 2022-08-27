@@ -5,954 +5,1325 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇲 大萝卜鸡圣何塞, server: 45.82.253.234, port: 28443, type: trojan, password: 75599052-d014-478d-b575-455346f4f660, sni: zaelot.cc}
-  - {name: 🇭🇰 HK HKG HGC B V2(vmess), server: hk-hkg-hgc-b-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
-  - {name: 🇸🇬 Singapore 6, server: 20.24.44.110, port: 28443, type: trojan, password: 91ddf170-fe8a-4c14-ac16-a0ec55192782, sni: download.windowsupdate1.com, skip-cert-verify: true}
-  - {name: 🇭🇰 韩国01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11923, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install01.vnupgcn.cn%22%7D"}}}
-  - {name: "🇭🇰 [CT/CM]香港07", server: zgrefgd03.standurl.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 39694:woaini2008, obfs-param: ""}
-  - {name: 🇦🇺 澳大利亚02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11925, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: 🇺🇲 SS|美国A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: d0014007-e6ae-4e4a-a3b0-1749600827c2}
-  - {name: 🇭🇰 HK_40, server: xmrh013.xmrth-node.xyz, port: 15885, type: vmess, uuid: ab3f9ddc-7c35-3793-98f0-1c37eb9741e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: 87318706-ws.va.huya.com}}}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35, server: 36.139.115.52, port: 11401, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 4, server: mlxy-zf.jiashumao.net, port: 27171, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b}
-  - {name: 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12, server: crj749919467.n-tmd.com, port: 31502, type: vmess, uuid: 9b4f0258-1127-41d9-f30a-469e80737327, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21, server: 120.197.130.126, port: 13101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: h745768.waihuizhibiaowang.com:11343, server: h745768.waihuizhibiaowang.com, port: 11343, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Digital VM 24, server: jp1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇯🇵 日本01|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /linodejp01, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇸🇬 新加坡B, server: cnallaz.eucdurl.me, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 39694:woaini2008, obfs-param: ""}
-  - {name: 🇸🇬 SS|新加坡A01|IDC| 解锁, server: node.a.access.in.nyapi.buzz, port: 45144, type: ss, cipher: chacha20-ietf-poly1305, password: 8f0c67ce-157c-4d90-aeae-c60790744db7}
-  - {name: github.com/freefq - 广东省移动 16, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}}
-  - {name: 🇭🇰 韩国02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11923, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: github.com/freefq - 广东省佛山市移动 11, server: 120.240.55.137, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇷 KR, server: kr.317542476.tk, port: 56550, type: trojan, password: aWmxc9WC6JTZ2bRG, sni: kewrymcz-htckf.run.goorm.io}
-  - {name: 🇩🇪 德国03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install03.vnupgcn.cn%22%7D"}}}
-  - {name: 🇨🇳 台湾05|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hinet04, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇺🇲 github.com/freefq - 美国RF Engineering 18, server: online.uc.edu, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}}
-  - {name: 🇺🇲 United-States 11, server: florida.missionsec.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: florida.missionsec.us}
-  - {name: 🇨🇳 github.com/freefq - 中国阿里云 27, server: yytok.wvs22.buzz, port: 31848, type: vmess, uuid: b88dd566-4fb4-42d0-bb79-7f06638d4d61, alterId: 0, cipher: auto, tls: true}
-  - {name: "🇭🇰 [CT/CM]香港10", server: zgrefgd03.standurl.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 39694:woaini2008, obfs-param: ""}
-  - {name: 🇩🇪 德国02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: 🇯🇵 日本03|负载均衡, server: aliyun.moble03.vnupgcn.cn, port: 65006, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.moble03.vnupgcn.cn%22%7D"}}}
-  - {name: "🇭🇰 [CT/CM]香港09", server: cngdcm.debugex.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 39694:woaini2008, obfs-param: ""}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19, server: cn04.downloadmovie.cn, port: 65036, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}}
-  - {name: 🇺🇲 US SJC AP V2(vmess), server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
-  - {name: 🇭🇰 韩国04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11924, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install04.vnupgcn.cn%22%7D"}}}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255, server: xmrh000.xmrth-node.xyz, port: 15880, type: vmess, uuid: a662477f-410b-3fa1-ba8b-a67abc8cce8c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: 87318706-ws.va.huya.com}}}
-  - {name: 🇭🇰 西班牙03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11926, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install03.vnupgcn.cn%22%7D"}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🏁ZZ_79, server: lms.uin-antasari.ac.id, port: 80, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnneo, headers: {Host: exa.nextvpn.cc}}}
-  - {name: 🇨🇳 scloud台湾07—原生IP, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /scloudhinet07, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 17, server: 172.64.159.37, port: 2052, type: vmess, uuid: 72735294-b70e-4486-b0ac-e52e3782bc58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: zxzz.zxzdy.buzz}}}
-  - {name: 🇸🇪 US SEA CTG 03 TR(trojan), server: us-sea-ctg-03-tr.nodes.cjhh.one, port: 889, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: cdn.savoy.click}
-  - {name: 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24, server: best03.downloadmovie.cn, port: 65081, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_78, server: xr-1.herokuapp.com, port: 443, type: vmess, uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess, headers: {Host: xr-1.herokuapp.com}}}
-  - {name: 🇭🇰 github.com/freefq - 香港环球全域电讯 5, server: 203.184.132.249, port: 4399, type: vmess, uuid: b315a93b-cec1-34cb-a658-be53ffda7cd8, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: pp1.zhengzhongfeizhu.xyz}}}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /chat, headers: {Host: vjp1.0bad.com}}}
-  - {name: 🇺🇲 United-States 2, server: nevada.missionsec.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: nevada.missionsec.us}
-  - {name: 🇺🇲 US, server: us.317542476.tk, port: 51046, type: trojan, password: 2SjXiTbTmVkUeaMJ, sni: wqqde.run-us-west2.goorm.io}
-  - {name: 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}}
-  - {name: 🇭🇰 HK_256, server: 23.91.100.243, port: 30862, type: vmess, uuid: 3b0f44e4-dd11-429d-c80f-615b10595db9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30, server: 120.233.7.221, port: 32004, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 HK_39, server: 42.3.19.58, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 香港HGC|直连|1x, server: 210.0.158.220, port: 28443, type: trojan, password: 410a6fdc-94fe-42df-ae29-d1350c5763e1, sni: zaelot.cc}
-  - {name: 🇭🇰 github.com/freefq - 香港环球全域电讯 1, server: 203.184.132.248, port: 4399, type: vmess, uuid: b315a93b-cec1-34cb-a658-be53ffda7cd8, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: pp1.zhengzhongfeizhu.xyz}}}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_82, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: 1b5afa45-be53-4cd9-a8cb-ee7385d9c123, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}}
-  - {name: "🇭🇰 [CT/CM]香港08", server: cngdcm.debugex.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 39694:woaini2008, obfs-param: ""}
-  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 23, server: 172.67.199.34, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}}
-  - {name: 🇭🇰 西班牙04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11926, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install04.vnupgcn.cn%22%7D"}}}
-  - {name: 🇺🇲 US_73, server: 152.67.223.187, port: 13774, type: vmess, uuid: 5da35e16-0af7-47cc-ed73-269824ccb1a2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: dd043aa3-36bf-4766-aaa8-1c99f6f0edeb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /chat, headers: {Host: vjp3.0bad.com}}}
+  - {name: 🇭🇰 HK_273, server: 23.91.100.243, port: 30862, type: vmess, uuid: 3b0f44e4-dd11-429d-c80f-615b10595db9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 github.com/freefq - 英国社会保险安全部 23, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
   - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56, server: tw02.henet.cyou, port: 20000, type: vmess, uuid: f77d0173-893b-4726-a88d-69d9eda3579a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742, server: tw-tb-c.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 Japan, server: metapod.defun.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: metapod.defun.us}
-  - {name: 🇨🇳 Taiwan, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: pastry.taiwanesefood.link}
-  - {name: 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}}
-  - {name: 🇺🇲 Pool_🇺🇸US_69, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
-  - {name: 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20, server: 123456789abcd.xn--h6q53lcvpz7l.club, port: 20942, type: vmess, uuid: de818be9-5006-4bfe-a088-3e30ab749c4a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v.qq.com}}}
-  - {name: 🇺🇲 US_77, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15, server: nusa.kencang.my.id, port: 443, type: trojan, password: 45bf0328-871b-462e-b07b-c5e2b9ce2e2c}
-  - {name: 🇺🇲 github.com/freefq - 美国RF Engineering 14, server: access.zoominfo.com, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}}
-  - {name: 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75, server: 104.18.24.139, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/5206194863/62c7702a0ea8b/, headers: {Host: sg1-v2ray.sshkit.org}}}
-  - {name: 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7, server: 80.251.208.30, port: 22223, type: vmess, uuid: 5ce411c8-da98-44f5-ac1b-3b32ccdd8ce7, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 80.251.208.30}}}
-  - {name: 🇺🇲 US_71, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28, server: zc.9900.sd20211007.xyz, port: 32001, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29, server: 120.197.130.126, port: 13009, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 印度02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11929, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
-  - {name: 120.233.7.54:11545, server: 120.233.7.54, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: 0696dab7-da01-44d4-8a5d-135026053a14, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}}
-  - {name: 🇭🇰 捷克04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11916, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install04.vnupgcn.cn%22%7D"}}}
-  - {name: 🇭🇰 HK HKG SH-HK 02 TR(trojan), server: hk-hkg-sh-hk-02-tr.nodes.cjhh.one, port: 21089, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: cdn.savoy.click}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_70, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 57dd8fa2-1088-43bc-85df-7eeb9745f806, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}}
-  - {name: 🇺🇲 US_83, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇺🇲 US SJC CTG 02 V2(vmess), server: us-sjc-ctg-02-v2.node.inforun.work, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
+  - {name: 大萝卜鸡智利, server: aliyun.install01.vnupgcn.cn, port: 11935, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}}
-  - {name: 🇺🇲 大萝卜鸡美国西雅图, server: 212.90.123.130, port: 28443, type: trojan, password: 75599052-d014-478d-b575-455346f4f660, sni: zaelot.cc}
-  - {name: github.com/freefq - 乌克兰  19, server: britain1.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇨🇳 TW TPE H V2(vmess), server: tw-tpe-h-v2.jd.cjhh.mom, port: 10088, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
-  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /chat, headers: {Host: vjp3.0bad.com}}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26, server: 120.197.130.126, port: 13001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇲 US3, server: us3.317542476.tk, port: 54000, type: trojan, password: hCelTdVFwZY5Aq4vHAB7, sni: g-ufekz.run-us-west2.goorm.io}
-  - {name: 🇭🇰 SS|香港A01|原生解锁, server: node.a.access.in.nyapi.buzz, port: 45251, type: ss, cipher: chacha20-ietf-poly1305, password: d65f9a4e-d804-46f9-9bc2-e15a76a7f574}
-  - {name: 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740, server: lc-hk01-direct01.lc-hk01.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: lc-hk01-direct01.lc-hk01.lc-node.com}}}
-  - {name: 🇺🇲 US2, server: us1.317542476.tk, port: 56193, type: trojan, password: PAm111oOjiODRvRsZ6qX, sni: bkkgbf5o541o.run-us-west2.goorm.io}
-  - {name: h745768.waihuizhibiaowang.com:11443, server: h745768.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
-  - {name: github.com/freefq - 广东省佛山市移动 6, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22in-us-1.onebox6.org%22%7D"}}}
-  - {name: 🇭🇰 荷兰02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_65, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
-  - {name: 🇨🇳 台湾04|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hinet04, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇩🇪 德国01|深港专线, server: aliyun.install01.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install01.vnupgcn.cn%22%7D"}}}
-  - {name: 🇨🇳 CN_31, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
-  - {name: 🇬🇧 github.com/freefq - 英国  25, server: 185.167.77.195, port: 29650, type: vmess, uuid: 660dbb02-2297-466b-c7b2-1bb8a6e680e5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 荷兰03|深港专线, server: aliyun.install03.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install03.vnupgcn.cn%22%7D"}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67, server: 20.24.209.70, port: 52229, type: vmess, uuid: f8d24f06-1513-33fc-bf49-34ac231fd665, alterId: 2, cipher: auto, tls: false}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25, server: 120.197.130.126, port: 13008, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42, server: hkbn-home-a.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇲 github.com/freefq - 美国  9, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: weixin.babazhuji.com}}}
-  - {name: 🇬🇧 UK LHR GD>GB TR(trojan), server: sh-gb-01-tr.node.inforun.work, port: 11889, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: cdn.savoy.click}
-  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 github.com/freefq - 加拿大  13, server: 527hk1.fans8.xyz, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 527hk1.fans8.xyz}}}
-  - {name: 🇨🇳 scloud台湾06-原生IP, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /scloudhinet06, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34, server: best02.downloadmovie.cn, port: 65081, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_76, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 直连-03-香港cmi-1.5x, server: hk5.xkray.sbs, port: 443, type: trojan, password: b797b09f-18b1-4183-bd5c-3933de41154e, sni: hk5.xkray.sbs}
-  - {name: 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81, server: v116.v2dns.bar, port: 80, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v116-DtoEwAEX, headers: {Host: v116.v2dns.bar}}}
-  - {name: 🇯🇵 github.com/freefq - 日本东京M247网络 28, server: jp16.chaoxn.top, port: 80, type: vmess, uuid: 49d7b427-d472-47cb-8c28-015a5553092f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇹🇷 US SJC AP TR(trojan), server: us-sjc-ap-tr.node.inforun.work, port: 789, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: cdn.savoy.click}
-  - {name: 🇨🇳 TW_739, server: 61.222.202.140, port: 15789, type: vmess, uuid: 4535e708-5988-4377-a083-755ed60d8068, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 大萝卜鸡日本, server: jp.useanlo.cf, port: 6523, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, sni: jp.useanlo.cf}
-  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20, server: 120.197.130.126, port: 13006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇲 Relay_🇺🇸US-🏁ZZ_80, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess-ws-makae, headers: {Host: bn-id01.ipv2ray.xyz}}}
-  - {name: 🇯🇵 日本04|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /japanese03, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇭🇰 菲律宾02|深港专线, server: aliyun.install02.vnupgcn.cn, port: 11906, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22, server: cn04.downloadmovie.cn, port: 65025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}}
-  - {name: 🇸🇪 US SEA CTG 03 V2(vmess), server: us-sea-ctg-03-v2.nodes.cjhh.one, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23, server: 120.197.130.126, port: 13003, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85, server: 20.205.2.65, port: 52335, type: vmess, uuid: f8d24f06-1513-33fc-bf49-34ac231fd665, alterId: 2, cipher: auto, tls: false}
-  - {name: 🇹🇷 US SJC 01-TR(trojan), server: us-sjc-01-tr.nodes.cjhh.one, port: 889, type: trojan, password: TqGiLGqoqLUssJpiIamJCpkGtxMRVJFV, sni: cdn.savoy.click}
-  - {name: 🇨🇳 TW_741, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 2, server: sg-zf.jiashumao.net, port: 29465, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b}
-  - {name: 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86, server: v3.tgfaka.com, port: 8443, type: vmess, uuid: 00b19c02-bc00-440a-a397-faf70ac3f44e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v3.tgfaka.com}}}
-  - {name: 🇺🇲 github.com/freefq - 美国  26, server: lc-kr02-direct01.lc-kr02.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}}}
-  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_66, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 github.com/freefq - 香港环球全域电讯 3, server: 203.184.132.247, port: 4399, type: vmess, uuid: b315a93b-cec1-34cb-a658-be53ffda7cd8, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: pp1.zhengzhongfeizhu.xyz}}}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港BGP03|优选原生IP|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /BGP03, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10, server: hg.jiashumao.net, port: 34210, type: trojan, password: 503a4c1f-af3a-395d-a9af-f7ff1963816b}
-  - {name: 🇩🇪 德国04|深港专线, server: aliyun.install04.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install04.vnupgcn.cn%22%7D"}}}
-  - {name: 🇸🇬 新加坡|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /doxjp03, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇺🇲 US_72, server: 51.81.223.14, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇯🇵 lindoe日本|三网优化|1x, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 410a6fdc-94fe-42df-ae29-d1350c5763e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /lindoerb01, headers: {Host: cs.daxun.cyou}}}
-  - {name: 🇭🇰 HK_41, server: 203.218.84.13, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18, server: 120.233.7.221, port: 18002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇲 United-States 10, server: music.missionsec.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: music.missionsec.us}
+  - {name: 阿联酋01|内网专线|Dubai, server: aliyun.install01.vnupgcn.cn, port: 11905, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇭🇰 Hong Kong2 [NF][D ]", server: ie.ednovas.cloud, port: 22134, type: vmess, uuid: 99aebb87-89a8-4f46-b49f-0a0320e352e1, alterId: 0, cipher: auto, tls: false}
+  - {name: h650196.waihuizhibiaowang.com:11743, server: h650196.waihuizhibiaowang.com, port: 11743, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29, server: 120.197.130.126, port: 13009, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 US_73, server: 152.67.223.187, port: 13774, type: vmess, uuid: 5da35e16-0af7-47cc-ed73-269824ccb1a2, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 39, server: sadfsn.domainsv3.com, port: 9403, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 🇸🇬 SG_09 @WangCai_1, server: 81.90.189.52, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇭🇰 HK 15, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true}
   - {name: 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68, server: status.qiscus.com, port: 443, type: vmess, uuid: 283e8955-4a4a-41ca-ac61-3eabf3077a95, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: sg2.jupiterv2ray.xyz}}}
+  - {name: 120.233.7.54:11545, server: 120.233.7.54, port: 11545, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_66, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30, server: 120.233.7.221, port: 32004, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 US5, server: us5.317542476.tk, port: 59898, type: trojan, password: OLpCw9CG3Y90o0BLRq1y, sni: ffunkbedofx-gskqs.run-us-west2.goorm.io}
+  - {name: 🇬🇧 大萝卜鸡英国, server: aliyun.install03.vnupgcn.cn, port: 11901, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: Cow Vagina_13, server: 20.239.162.164, port: 12369, type: trojan, password: e1c386fa-7d0e-4e85-a4c9-c62d21699d4f, sni: 20-187-95-105.nhost.00cdn.com}
+  - {name: 🇭🇰 HK_39, server: 42.3.19.58, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇯🇵 github.com/freefq - 日本  8, server: 821hk05.tfzhc.top, port: 443, type: trojan, password: e9ea8749-b54c-47d9-8274-c26253332149}
+  - {name: h961359.waihuizhibiaowang.com:11543, server: h961359.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37, server: 139.59.244.143, port: 38941, type: vmess, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: 🇨🇳 台湾02|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9013, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /chat, headers: {Host: vjp1.0bad.com}}}
+  - {name: 🇯🇵 JP_342, server: 146.56.184.242, port: 19570, type: vmess, uuid: 70a998e0-ba0b-4994-af50-8deed58cdbd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇮 芬兰04|内网专线|Suomi, server: aliyun.install04.vnupgcn.cn, port: 11933, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 47, server: tw-tpe-h-v2.jd.cjhh.mom, port: 10088, type: vmess, uuid: 763b2303-0e16-455e-926d-66d909c3e37b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
+  - {name: 🇸🇬 doSG, server: do.22665.ml, port: 47339, type: trojan, password: 8251fe19-72a3-4e69-b3c1-493c47d36a5e, sni: do.22665.ml}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇰🇷 KR3, server: kr3.317542476.tk, port: 56877, type: trojan, password: wC9cZcIPWq1qdnISfLeU, sni: egfhkkyhbb-upufp.run.goorm.io}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67, server: 20.24.209.70, port: 52229, type: vmess, uuid: f8d24f06-1513-33fc-bf49-34ac231fd665, alterId: 2, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港 01 | 1.5x, server: n3.10tz.top, port: 11407, type: ss, cipher: aes-256-gcm, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063}
+  - {name: 西班牙04|内网专线|España, server: aliyun.install04.vnupgcn.cn, port: 11926, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: github.com/freefq - 广东省移动 40, server: linux.nameserversv3.com, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 🇸🇬 SG_06 @WangCai_1, server: 81.90.189.52, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 新加坡1|深新链路|1.0x, server: sz.balink.buzz, port: 38610, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002}
+  - {name: Cow Vagina_14, server: aliyun.moble.vnupgcn.cn, port: 9014, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇿🇦 大萝卜鸡南非, server: aliyun.install03.vnupgcn.cn, port: 11909, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 github.com/freefq - 英国  18, server: rbobosz.tk, port: 23868, type: trojan, password: gMVN7PbEX2}
   - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_74, server: bwg2.gushidawang.cc, port: 57539, type: vmess, uuid: fcf7202c-bd1a-44e9-a25e-bf152f6e5c11, alterId: 0, cipher: auto, tls: false}
-  - {name: github.com/freefq - 广东省移动 22, server: aliyun.install02.vnupgcn.cn, port: 11927, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22aliyun.install02.vnupgcn.cn%22%7D"}}}
-  - {name: 🇨🇳 github.com/freefq - 北京市移动 8, server: node.a.access.in.nyapi.buzz, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: d0014007-e6ae-4e4a-a3b0-1749600827c2}
-  - {name: 🇭🇰 大萝卜鸡香港, server: api.tcpbbr.net, port: 18443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d}
+  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773, server: tw-tb-b.zc20200426.club, port: 39998, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇸🇬 SG_05 @WangCai_1, server: 81.90.189.52, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇨🇳 大萝卜鸡台湾2, server: aliyun.moble.vnupgcn.cn, port: 9012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 狮城 02 | 2x, server: n2.nufsx.top, port: 24101, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063}
+  - {name: 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772, server: lc-hk01-direct01.lc-hk01.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: lc-hk01-direct01.lc-hk01.lc-node.com}}}
+  - {name: Cow Vagina_23, server: aliyun.moble.vnupgcn.cn, port: 9007, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 大萝卜鸡台湾1, server: aliyun.moble.vnupgcn.cn, port: 9013, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 大萝卜鸡德国, server: aliyun.install03.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国RF Engineering 30, server: online.uc.edu, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}}
+  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42, server: hkbn-home-a.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
+  - {name: h650196.waihuizhibiaowang.com:11143, server: h650196.waihuizhibiaowang.com, port: 11143, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24, server: best03.downloadmovie.cn, port: 65081, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: YouTube-aweikeji}}}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18, server: 120.233.7.221, port: 18002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: h649960.waihuizhibiaowang.com:11443, server: h649960.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇺🇲 github.com/freefq - 北美地区  41, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: tv.cctv.com}}}
+  - {name: 🇩🇪 德国03|内网专线|LINODE, server: aliyun.install03.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 Singapore 6, server: 20.24.44.110, port: 28443, type: trojan, password: 91ddf170-fe8a-4c14-ac16-a0ec55192782, sni: download.windowsupdate1.com, skip-cert-verify: true}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25, server: 120.197.130.126, port: 13008, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 大萝卜鸡加拿大, server: aliyun.install03.vnupgcn.cn, port: 11902, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: h961359.waihuizhibiaowang.com:11243, server: h961359.waihuizhibiaowang.com, port: 11243, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇺🇲 大萝卜鸡西雅图, server: 212.90.123.130, port: 28443, type: trojan, password: 75599052-d014-478d-b575-455346f4f660, sni: zaelot.cc}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22, server: cn04.downloadmovie.cn, port: 65025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}}
+  - {name: 阿联酋02|内网专线|Dubai, server: aliyun.install02.vnupgcn.cn, port: 11905, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 Relay_🇺🇸US-🏁ZZ_79, server: lms.uin-antasari.ac.id, port: 80, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnneo, headers: {Host: exa.nextvpn.cc}}}
+  - {name: 🇺🇲 United-States 5, server: picks.missionsec.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: picks.missionsec.us}
+  - {name: 🇭🇰 HK_41, server: 203.218.84.13, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇲 US_77, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇨🇳 github.com/freefq - 中国阿里云 45, server: yytok.wvs22.buzz, port: 31848, type: vmess, uuid: b88dd566-4fb4-42d0-bb79-7f06638d4d61, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇬🇧 github.com/freefq - 英国  13, server: 185.167.78.193, port: 48986, type: vmess, uuid: 51e663d5-bd0b-447c-d483-d7a8e27d157a, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  50, server: 152.70.136.12, port: 34401, type: vmess, uuid: 890a284d-5d99-45e7-a982-2c34e5616778, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: vuk2.0bad.com}}}
+  - {name: h649960.waihuizhibiaowang.com:11543, server: h649960.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇯🇵 大萝卜鸡日本, server: jp.useanlo.cf, port: 6523, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, sni: jp.useanlo.cf}
+  - {name: 🇸🇬 Singapore|深新|C|1.0, server: 120.197.129.50, port: 25877, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44, server: nusa.kencang.my.id, port: 443, type: trojan, password: 45bf0328-871b-462e-b07b-c5e2b9ce2e2c}
+  - {name: 🇰🇷 KR2, server: kr2.317542476.tk, port: 51092, type: trojan, password: DJkRVQUXIJ3wo9f4J3YO, sni: xsoluvxn-ljxxz.run.goorm.io}
+  - {name: 🇨🇳 台湾06|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9017, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN_31, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}}
+  - {name: 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81, server: v116.v2dns.bar, port: 80, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v116-DtoEwAEX, headers: {Host: v116.v2dns.bar}}}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2, server: 38.75.136.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46, server: id-lb.vhax.net, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: true, servername: gz0.googleusercontent.com, network: ws, ws-opts: {path: /, headers: {Host: gz0.googleusercontent.com}}}
+  - {name: 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51, server: us-sjc-01-v2.jd.cjhh.mom, port: 888, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
+  - {name: 🇭🇰 Taiwan|深港|A|1.5, server: 120.197.129.50, port: 22451, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]", server: ie.ednovas.cloud, port: 22135, type: vmess, uuid: 99aebb87-89a8-4f46-b49f-0a0320e352e1, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 JP_343, server: 146.56.167.119, port: 6666, type: vmess, uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-Basic-09-负载集群b, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 github.com/freefq - 加拿大  26, server: 823tw.tfzhc.top, port: 443, type: trojan, password: e9ea8749-b54c-47d9-8274-c26253332149}
+  - {name: 🇯🇵 Japan, server: metapod.defun.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: metapod.defun.us}
+  - {name: 🇺🇲 美国08|原生解锁|APERNET, server: aliyun.unicom.vnupgcn.cn, port: 9029, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 大萝卜鸡捷克, server: aliyun.install02.vnupgcn.cn, port: 11916, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: h650196.waihuizhibiaowang.com:11243, server: h650196.waihuizhibiaowang.com, port: 11243, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇺🇲 US 5, server: iiiieeepppplll.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, skip-cert-verify: true}
+  - {name: 🇨🇳 Taiwan|CN2|A|3.0, server: portforward.one, port: 24445, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275, server: hkbn-home-a.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇭🇰 HK_274, server: 18.167.20.169, port: 8080, type: vmess, uuid: e1f97064-adcd-40d3-91a0-3f0bea035fca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: h745768.waihuizhibiaowang.com:11543, server: h745768.waihuizhibiaowang.com, port: 11543, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: "🇭🇰 深港专线[Trojan][倍率:2.5]", server: cnsg.sfn32g.ccddn4.icu, port: 65522, type: trojan, password: 1544af57-7ebf-30de-b731-fdaf00f68501, sni: dl.sg1.cc.tjcct.xyz}
+  - {name: 🇺🇲 US_72, server: 51.81.223.14, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86, server: v3.tgfaka.com, port: 8443, type: vmess, uuid: 00b19c02-bc00-440a-a397-faf70ac3f44e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v3.tgfaka.com}}}
+  - {name: "🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]", server: ie.ednovas.cloud, port: 22133, type: vmess, uuid: 99aebb87-89a8-4f46-b49f-0a0320e352e1, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Hong Kong|CN2|A|3.0, server: portforward.one, port: 20238, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本微软云, server: 20.89.129.74, port: 80, type: vmess, uuid: fc86a82c-6020-4753-b09a-40fa32a4189c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 US_83, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国RF Engineering 38, server: 141.193.213.21, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_70, server: hk18.bp777.buzz, port: 21665, type: vmess, uuid: 57dd8fa2-1088-43bc-85df-7eeb9745f806, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk18.bp777.buzz}}}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 48, server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35, server: 36.139.115.52, port: 11401, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 United-States 8, server: hacks.missionsec.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: hacks.missionsec.us}
+  - {name: 🇭🇰 环球电讯|香港4|深圳移动|1.0x, server: sy.balink.buzz, port: 28600, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002}
+  - {name: 🇺🇲 github.com/freefq - 美国  21, server: caterpie.defun.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw}
+  - {name: "🇭🇰 深港专线3[Trojan][倍率:2.5]", server: cnsg.6g5kca.ccddn4.icu, port: 65523, type: trojan, password: 1544af57-7ebf-30de-b731-fdaf00f68501, sni: dl.sg3.cc.tjcct.xyz}
+  - {name: 大萝卜鸡阿联酋, server: aliyun.install01.vnupgcn.cn, port: 11905, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34, server: best02.downloadmovie.cn, port: 65081, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: best02.downloadmovie.cn}}}
+  - {name: 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44, server: hk16.bp777.buzz, port: 21665, type: vmess, uuid: 0696dab7-da01-44d4-8a5d-135026053a14, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk16.bp777.buzz}}}
+  - {name: 🇸🇬 SG_01 @WangCai_1, server: 81.90.189.52, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 34, server: fr0810.moonfree.top, port: 443, type: vmess, uuid: a8ce5e05-d5c9-48c0-a082-7b39453b29c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: fr0810.moonfree.top}}}
+  - {name: 🇭🇰 HK_40, server: xmrh013.xmrth-node.xyz, port: 15885, type: vmess, uuid: ab3f9ddc-7c35-3793-98f0-1c37eb9741e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: 87318706-ws.va.huya.com}}}
+  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55, server: tw01.henet.cyou, port: 20000, type: vmess, uuid: dd043aa3-36bf-4766-aaa8-1c99f6f0edeb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}}
+  - {name: 🇨🇳 台湾10|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9021, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 Taiwan, server: pastry.taiwanesefood.link, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: pastry.taiwanesefood.link}
+  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 14, server: linux.nameserversv3.com, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: "🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]", server: cnsg.6g5kca.ccddn4.icu, port: 65401, type: trojan, password: 1544af57-7ebf-30de-b731-fdaf00f68501, sni: dl.sghgcbb3.cc.tjcct.xyz}
+  - {name: 🇸🇬 狮城 03 | 1x, server: n3.nufsx.top, port: 24105, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063}
+  - {name: 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu, server: 103.135.249.57, port: 36565, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 狮城 01 | 1x, server: n1.sgys1024.xyz, port: 44101, type: ss, cipher: aes-256-gcm, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063}
+  - {name: github.com/freefq - 广东省佛山市移动 5, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22in-us-1.onebox6.org%22%7D"}}}
+  - {name: 🇭🇰 HK_272, server: 128.1.134.126, port: 6666, type: vmess, uuid: 7fb3b571-cda8-40f6-c9e6-db9765ea8faa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11, server: cne.cloudorg.uk, port: 2096, type: trojan, password: 0f88c09d-0fd9-4e34-b3ad-8719e908d5d8}
+  - {name: 🇭🇰 大萝卜鸡香港1, server: aliyun.moble.vnupgcn.cn, port: 9008, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国CloudFlare节点 35, server: 172.67.199.34, port: 80, type: vmess, uuid: f65a62bc-ea93-4814-9b08-a07fd98edc60, alterId: 0, cipher: auto, tls: false, servername: infinys3.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: infinys3.nextvpn.cc}}}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26, server: 120.197.130.126, port: 13001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾01|原生解锁|中華電信, server: aliyun.moble.vnupgcn.cn, port: 9012, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港 02 | 2.5x, server: n4.nufsx.top, port: 24103, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063}
+  - {name: 🇺🇲 github.com/freefq - 美国  3, server: kansas.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw}
+  - {name: 🇨🇦 github.com/freefq - 加拿大  24, server: merben.beistu.xyz, port: 21779, type: vmess, uuid: c038f8a6-a3e0-48d5-8e92-1f12f8871e39, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 Taiwan|IEPL|A|5.0, server: gyiepl.1aba.cn, port: 22017, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 TW_770, server: 61.222.202.140, port: 33792, type: vmess, uuid: e55cd182-01b0-4fb7-a510-363701a491c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 SG_02 @WangCai_1, server: 81.90.189.52, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇰🇷 韩国02|内网专线|한국, server: aliyun.install02.vnupgcn.cn, port: 11923, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇮 大萝卜鸡芬兰, server: aliyun.install04.vnupgcn.cn, port: 11933, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_78, server: xr-1.herokuapp.com, port: 443, type: vmess, uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess, headers: {Host: xr-1.herokuapp.com}}}
+  - {name: 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77, server: us-sjc-ap-v2.node.inforun.work, port: 788, type: vmess, uuid: d0aec6f9-a2d0-4238-893d-73571c4e9cee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: cdn.savoy.click}}}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}}
+  - {name: 🇭🇰 大萝卜鸡香港2, server: 165.154.243.157, port: 48001, type: trojan, password: 75599052-d014-478d-b575-455346f4f660, sni: download.windowsupdate1.com}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_76, server: sg.guiqing.ml, port: 43956, type: vmess, uuid: 91df6837-896d-45bc-ec6f-0fe4b792b369, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国RF Engineering 28, server: 141.193.213.20, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}}
+  - {name: 🇬🇧 github.com/freefq - 英国  16, server: 185.167.78.193, port: 47634, type: vmess, uuid: 5cf637c0-04f2-4af4-c25b-6e467c14d496, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 github.com/freefq - 印度孟买阿里云 32, server: 147.139.7.71, port: 888, type: vmess, uuid: 08d6729d-830e-4341-df76-62d3d12e75e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 147.139.7.71}}}
+  - {name: 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33, server: 38.75.136.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42, server: v2ray1.udpgw.com, port: 443, type: vmess, uuid: 2725f8e6-be44-48f5-9e30-59af4d026db2, alterId: 0, cipher: auto, tls: true, servername: gz0.googleusercontent.com, network: ws, ws-opts: {path: /, headers: {Host: gz0.googleusercontent.com}}}
+  - {name: 🇨🇳 TW_769, server: 61.222.202.140, port: 15789, type: vmess, uuid: 4535e708-5988-4377-a083-755ed60d8068, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 US_71, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇺🇲 Pool_🇺🇸US_69, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
+  - {name: 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75, server: 104.18.24.139, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/5206194863/62c7702a0ea8b/, headers: {Host: sg1-v2ray.sshkit.org}}}
+  - {name: 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36, server: ff5c0fb.rd.cloudflare.systems, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /s/ff5c0fb.fm.icloud.com:30513, headers: {Host: YouTube-aweikeji}}}
+  - {name: 大萝卜鸡西班牙, server: aliyun.install04.vnupgcn.cn, port: 11926, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 荷兰01|内网专线|Nederland, server: aliyun.install01.vnupgcn.cn, port: 11915, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 俄罗斯04|内网专线|Россия, server: aliyun.install04.vnupgcn.cn, port: 11911, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 Relay_🇺🇸US-🏁ZZ_80, server: api.qiscus.com, port: 443, type: vmess, uuid: 8f9b60e6-1db3-42e4-97b9-1e311f427649, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess-ws-makae, headers: {Host: bn-id01.ipv2ray.xyz}}}
+  - {name: 🇨🇦 github.com/freefq - 加拿大  19, server: tw821.tfzhc.top, port: 443, type: trojan, password: e9ea8749-b54c-47d9-8274-c26253332149}
+  - {name: 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771, server: tw-tb-c.zc20200426.club, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
+  - {name: _Cow Vagina 4, server: nas5.travelerv2.xyz, port: 21872, type: vmess, uuid: c1774159-5992-3104-bf52-02d24c524001, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22nas5.travelerv2.xyz%22%7D"}}}
+  - {name: 🇩🇪 德国01|内网专线|LINODE, server: aliyun.install01.vnupgcn.cn, port: 11903, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 大萝卜鸡香港3, server: ssl.tcpbbr.net, port: 12163, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d}
+  - {name: 🇯🇵 Japan 2, server: caterpie.defun.us, port: 443, type: trojan, password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U, sni: caterpie.defun.us}
+  - {name: 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27, server: fd1eb4612cdd493b93556e0067e806.run-us-west2.goorm.io, port: 443, type: vmess, uuid: 5a0e8b3d-96cb-47f5-abd4-a652a37144e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /fd1eb4612cdd493b93556e0067e80690, headers: {Host: fd1eb4612cdd493b93556e0067e806.run-us-west2.goorm.io}}}
+  - {name: 中转, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true}
+  - {name: 🇺🇲 github.com/freefq - 美国  1, server: 137.184.118.47, port: 51649, type: vmess, uuid: 5d0b1709-5c3c-4073-fb3f-67251426571e, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}}
+  - {name: h961359.waihuizhibiaowang.com:11443, server: h961359.waihuizhibiaowang.com, port: 11443, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85, server: 20.205.2.65, port: 52335, type: vmess, uuid: f8d24f06-1513-33fc-bf49-34ac231fd665, alterId: 2, cipher: auto, tls: false}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_82, server: hk15.bp777.buzz, port: 21665, type: vmess, uuid: 1b5afa45-be53-4cd9-a8cb-ee7385d9c123, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk15.bp777.buzz}}}
+  - {name: 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25, server: v2ray1.udpgw.com, port: 443, type: vmess, uuid: 09961dcc-8414-4ef9-a7f3-1fd2235da390, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: v2ray1.udpgw.com}}}
+  - {name: Cow Vagina_34, server: 20.239.162.164, port: 12369, type: trojan, password: 6150c97e-ed9e-4759-9134-90aa5352d638, sni: 20-187-95-105.nhost.00cdn.com}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28, server: zc.9900.sd20211007.xyz, port: 32001, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 17, server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: 763b2303-0e16-455e-926d-66d909c3e37b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk-hkg-it2-svm-v2.node.inforun.work}}}
+  - {name: 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49, server: setup.beistu.xyz, port: 22358, type: vmess, uuid: 2024fb69-342a-4a9d-c0dd-cde6f1095748, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21, server: 120.197.130.126, port: 13101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇴 github.com/freefq - 罗马尼亚  7, server: 185.126.116.123, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
+  - {name: h745768.waihuizhibiaowang.com:11243, server: h745768.waihuizhibiaowang.com, port: 11243, type: http, username: dcf12c7e7d, password: 26bae9b023, tls: true}
+  - {name: 🇭🇰 香港06|原生解锁|CMIHK, server: aliyun.moble.vnupgcn.cn, port: 9007, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130, server: 4.hk.zz.xxxxx.x-t-fuckword.network, port: 36676, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  9, server: nevada.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw}
+  - {name: 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10, server: cuttlefish.fireplay.io, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw}
+  - {name: 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20, server: 120.197.130.126, port: 13006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 阿联酋04|内网专线|Dubai, server: aliyun.install04.vnupgcn.cn, port: 11905, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: Cow Vagina_4, server: hg.super2020travel.xyz, port: 10112, type: vmess, uuid: c1774159-5992-3104-bf52-02d24c524001, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: "%7B%22Host%22:%22hg.super2020travel.xyz%22%7D"}}}
+  - {name: 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19, server: cn04.downloadmovie.cn, port: 65036, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /rocket, headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}}}
+  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 43, server: uiug.expirationv3.com, port: 9405, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707}
+  - {name: 🇯🇵 日本01, server: cm.kapoknode.com, port: 21205, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4}
+  - {name: 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22, server: qoslsjws.hootfun.top, port: 25333, type: trojan, password: 935f34c1-1713-402c-bfe1-f051cf49d370}
+  - {name: 孟加拉国02|内网专线|বাংলাদেশ, server: aliyun.install02.vnupgcn.cn, port: 11908, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23, server: 120.197.130.126, port: 13003, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 Hong Kong深港|D|1.5, server: 120.197.129.50, port: 25577, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 大萝卜鸡俄罗斯, server: aliyun.install02.vnupgcn.cn, port: 11911, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  12, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 「🇸🇬」猕猴桃 x1, server: n15.emovpn.xyz, port: 1266, type: ss, cipher: chacha20-ietf-poly1305, password: 4d66c561-e5df-4b5e-b599-38f146217074}
+  - {name: "🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]", server: ie.ednovas.cloud, port: 22157, type: vmess, uuid: 99aebb87-89a8-4f46-b49f-0a0320e352e1, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  4, server: music.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw}
+  - {name: 🇭🇰 Hong Kong|IEPL|D|5.0, server: gyiepl.1aba.cn, port: 36566, type: vmess, uuid: 279f8388-f821-4922-9a74-80d456809e40, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 github.com/freefq - 美国  20, server: 143.198.0.211, port: 26923, type: vmess, uuid: e8e1b9a5-2ba6-4847-9dd8-92f1d8019ebf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 美国04|原生解锁|APERNET, server: aliyun.unicom.vnupgcn.cn, port: 9025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇲 Relay_🇺🇸US-🇺🇸US_65, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇭🇰 [CT/CM]香港07
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇭🇰 [CT/CM]香港10
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇭🇰 [CT/CM]香港08
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇭🇰 香港 01 | 1.5x
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇭🇰 香港06|原生解锁|CMIHK
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
       - 🎯 全球直连
   - name: 🍎 苹果服务
     type: select
@@ -960,156 +1331,218 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - ♻️ 自动选择
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1125,156 +1558,218 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇲 大萝卜鸡圣何塞
-      - 🇭🇰 HK HKG HGC B V2(vmess)
-      - 🇸🇬 Singapore 6
-      - 🇭🇰 韩国01|深港专线
-      - 🇭🇰 [CT/CM]香港07
-      - 🇦🇺 澳大利亚02|深港专线
-      - 🇺🇲 SS|美国A01|IDC| 解锁
-      - 🇭🇰 HK_40
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 12
-      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
-      - h745768.waihuizhibiaowang.com:11343
-      - 🇯🇵 github.com/freefq - 日本东京Digital VM 24
-      - 🇯🇵 日本01|三网优化|1x
-      - 🇸🇬 新加坡B
-      - 🇸🇬 SS|新加坡A01|IDC| 解锁
-      - github.com/freefq - 广东省移动 16
-      - 🇭🇰 韩国02|深港专线
-      - github.com/freefq - 广东省佛山市移动 11
-      - 🇰🇷 KR
-      - 🇩🇪 德国03|深港专线
-      - 🇨🇳 台湾05|优选原生IP|1x
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 18
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
-      - 🇺🇲 United-States 11
-      - 🇨🇳 github.com/freefq - 中国阿里云 27
-      - 🇭🇰 [CT/CM]香港10
-      - 🇩🇪 德国02|深港专线
-      - 🇯🇵 日本03|负载均衡
-      - 🇭🇰 [CT/CM]香港09
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
-      - 🇺🇲 US SJC AP V2(vmess)
-      - 🇭🇰 韩国04|深港专线
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_255
-      - 🇭🇰 西班牙03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
-      - 🇨🇳 scloud台湾07—原生IP
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 17
-      - 🇸🇪 US SEA CTG 03 TR(trojan)
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 5
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_282
-      - 🇺🇲 United-States 2
-      - 🇺🇲 US
-      - 🇫🇷 Relay_🇨🇳CN-🇫🇷FR_111
-      - 🇭🇰 HK_256
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
-      - 🇭🇰 HK_39
-      - 🇭🇰 香港HGC|直连|1x
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 1
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
-      - 🇭🇰 [CT/CM]香港08
-      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 23
-      - 🇭🇰 西班牙04|深港专线
-      - 🇺🇲 US_73
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_341
+      - 🇭🇰 HK_273
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 23
       - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_56
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_742
-      - 🇯🇵 Japan
-      - 🇨🇳 Taiwan
-      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
-      - 🇺🇲 Pool_🇺🇸US_69
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 20
-      - 🇺🇲 US_77
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
-      - 🇺🇲 github.com/freefq - 美国RF Engineering 14
-      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
-      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 7
-      - 🇺🇲 US_71
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
-      - 🇭🇰 印度02|深港专线
-      - h745768.waihuizhibiaowang.com:11543
-      - 120.233.7.54:11545
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
-      - 🇭🇰 捷克04|深港专线
-      - 🇭🇰 HK HKG SH-HK 02 TR(trojan)
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
-      - 🇺🇲 US_83
-      - 🇺🇲 US SJC CTG 02 V2(vmess)
+      - 大萝卜鸡智利
       - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_32
-      - 🇺🇲 大萝卜鸡美国西雅图
-      - github.com/freefq - 乌克兰  19
-      - 🇨🇳 TW TPE H V2(vmess)
-      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_281
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
-      - 🇺🇲 US3
-      - 🇭🇰 SS|香港A01|原生解锁
-      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_740
-      - 🇺🇲 US2
-      - h745768.waihuizhibiaowang.com:11443
-      - github.com/freefq - 广东省佛山市移动 6
-      - 🇭🇰 荷兰02|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
-      - 🇨🇳 台湾04|优选原生IP|1x
-      - 🇩🇪 德国01|深港专线
-      - 🇨🇳 CN_31
-      - 🇬🇧 github.com/freefq - 英国  25
-      - 🇭🇰 荷兰03|深港专线
-      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
-      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
-      - 🇺🇲 github.com/freefq - 美国  9
-      - 🇬🇧 UK LHR GD>GB TR(trojan)
-      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 21
-      - 🇨🇦 github.com/freefq - 加拿大  13
-      - 🇨🇳 scloud台湾06-原生IP
-      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
-      - 🇭🇰 直连-03-香港cmi-1.5x
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
-      - 🇯🇵 github.com/freefq - 日本东京M247网络 28
-      - 🇹🇷 US SJC AP TR(trojan)
-      - 🇨🇳 TW_739
-      - 🇯🇵 大萝卜鸡日本
-      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_738
-      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
-      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
-      - 🇯🇵 日本04|三网优化|1x
-      - 🇭🇰 菲律宾02|深港专线
-      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
-      - 🇸🇪 US SEA CTG 03 V2(vmess)
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
-      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
-      - 🇹🇷 US SJC 01-TR(trojan)
-      - 🇨🇳 TW_741
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 2
-      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
-      - 🇺🇲 github.com/freefq - 美国  26
-      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
-      - 🇭🇰 github.com/freefq - 香港环球全域电讯 3
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_112
-      - 🇭🇰 香港BGP03|优选原生IP|1x
-      - 🇰🇷 github.com/freefq - 韩国首尔Amazon数据中心 10
-      - 🇩🇪 德国04|深港专线
-      - 🇸🇬 新加坡|三网优化|1x
-      - 🇺🇲 US_72
-      - 🇯🇵 lindoe日本|三网优化|1x
-      - 🇭🇰 HK_41
-      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
-      - 🇺🇲 United-States 10
+      - 阿联酋01|内网专线|Dubai
+      - 🇭🇰 Hong Kong2 [NF][D ]
+      - h650196.waihuizhibiaowang.com:11743
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_29
+      - 🇺🇲 US_73
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 39
+      - 🇸🇬 SG_09 @WangCai_1
+      - 🇭🇰 HK 15
       - 🇩🇪 Relay_🇺🇸US-🇩🇪DE_68
+      - 120.233.7.54:11545
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_66
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_30
+      - 🇺🇲 US5
+      - 🇬🇧 大萝卜鸡英国
+      - Cow Vagina_13
+      - 🇭🇰 HK_39
+      - 🇯🇵 github.com/freefq - 日本  8
+      - h961359.waihuizhibiaowang.com:11543
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 37
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇨🇳 台湾02|原生解锁|中華電信
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_340
+      - 🇯🇵 JP_342
+      - 🇫🇮 芬兰04|内网专线|Suomi
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 47
+      - 🇸🇬 doSG
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 6
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_128
+      - 🇰🇷 KR3
+      - 🇺🇲 Relay_🇺🇸US-🇨🇦CA_67
+      - 🇭🇰 香港 01 | 1.5x
+      - 西班牙04|内网专线|España
+      - github.com/freefq - 广东省移动 40
+      - 🇸🇬 SG_06 @WangCai_1
+      - 🇸🇬 新加坡1|深新链路|1.0x
+      - Cow Vagina_14
+      - 🇿🇦 大萝卜鸡南非
+      - 🇬🇧 github.com/freefq - 英国  18
       - 🇺🇲 Relay_🇺🇸US-🇺🇸US_74
-      - github.com/freefq - 广东省移动 22
-      - 🇨🇳 github.com/freefq - 北京市移动 8
-      - 🇭🇰 大萝卜鸡香港
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_773
+      - 🇸🇬 SG_05 @WangCai_1
+      - 🇨🇳 大萝卜鸡台湾2
+      - 🇸🇬 狮城 02 | 2x
+      - 🇭🇰 Relay_🇹🇼TW-🇭🇰HK_772
+      - Cow Vagina_23
+      - 🇨🇳 大萝卜鸡台湾1
+      - 🇩🇪 大萝卜鸡德国
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 30
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_42
+      - h650196.waihuizhibiaowang.com:11143
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_24
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 29
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_18
+      - h649960.waihuizhibiaowang.com:11443
+      - 🇺🇲 github.com/freefq - 北美地区  41
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_33
+      - 🇩🇪 德国03|内网专线|LINODE
+      - 🇸🇬 Singapore 6
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_25
+      - 🇨🇦 大萝卜鸡加拿大
+      - h961359.waihuizhibiaowang.com:11243
+      - 🇺🇲 大萝卜鸡西雅图
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_22
+      - 阿联酋02|内网专线|Dubai
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_79
+      - 🇺🇲 United-States 5
+      - 🇭🇰 HK_41
+      - 🇺🇲 US_77
+      - 🇨🇳 github.com/freefq - 中国阿里云 45
+      - 🇬🇧 github.com/freefq - 英国  13
+      - 🇺🇲 github.com/freefq - 美国  50
+      - 🇬🇧 github.com/freefq - 英国伦敦Linode数据中心 31
+      - h649960.waihuizhibiaowang.com:11543
+      - 🇯🇵 大萝卜鸡日本
+      - 🇸🇬 Singapore|深新|C|1.0
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_27
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 44
+      - 🇰🇷 KR2
+      - 🇨🇳 台湾06|原生解锁|中華電信
+      - 🇨🇳 CN_31
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_81
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶  46
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州费利蒙 51
+      - 🇭🇰 Taiwan|深港|A|1.5
+      - 🇭🇰 3x[IEPL]NR 🇭🇰 Hong Kong3 [NF][D ]
+      - 🇯🇵 JP_343
+      - 🇭🇰 香港-Basic-09-负载集群b
+      - 🇨🇦 github.com/freefq - 加拿大  26
+      - 🇯🇵 Japan
+      - 🇺🇲 美国08|原生解锁|APERNET
+      - 大萝卜鸡捷克
+      - h650196.waihuizhibiaowang.com:11243
+      - 🇺🇲 US 5
+      - 🇨🇳 Taiwan|CN2|A|3.0
+      - 🇭🇰 Relay_🇭🇰HK-🇭🇰HK_275
+      - 🇭🇰 HK_274
+      - h745768.waihuizhibiaowang.com:11543
+      - 🇭🇰 深港专线[Trojan][倍率:2.5]
+      - 🇺🇲 US_72
+      - 🇷🇺 Relay_🇺🇸US-🇷🇺RU_86
+      - 🇭🇰 NR 🇭🇰 Hong Kong1 [NF][D ]
+      - 🇭🇰 Hong Kong|CN2|A|3.0
+      - 🇯🇵 日本微软云
+      - 🇺🇲 US_83
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 38
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_70
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 48
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_35
+      - 🇺🇲 United-States 8
+      - 🇭🇰 环球电讯|香港4|深圳移动|1.0x
+      - 🇺🇲 github.com/freefq - 美国  21
+      - 🇭🇰 深港专线3[Trojan][倍率:2.5]
+      - 大萝卜鸡阿联酋
+      - 🇹🇭 Relay_🇨🇳CN-🇹🇭TH_34
+      - 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_44
+      - 🇸🇬 SG_01 @WangCai_1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 34
+      - 🇭🇰 HK_40
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_55
+      - 🇨🇳 台湾10|原生解锁|中華電信
+      - 🇨🇳 Taiwan
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 14
+      - 🇭🇰 深港专线转香港HGC商宽4[Trojan][倍率:2.5]
+      - 🇸🇬 狮城 03 | 1x
+      - 🇭🇰 Hong Kong|DMIT体验包|感谢DuckXiu
+      - 🇸🇬 狮城 01 | 1x
+      - github.com/freefq - 广东省佛山市移动 5
+      - 🇭🇰 HK_272
+      - 🇦🇨 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 11
+      - 🇭🇰 大萝卜鸡香港1
+      - 🇺🇲 github.com/freefq - 美国CloudFlare节点 35
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_26
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_129
+      - 🇨🇳 台湾01|原生解锁|中華電信
+      - 🇭🇰 香港 02 | 2.5x
+      - 🇺🇲 github.com/freefq - 美国  3
+      - 🇨🇦 github.com/freefq - 加拿大  24
+      - 🇨🇳 Taiwan|IEPL|A|5.0
+      - 🇨🇳 TW_770
+      - 🇸🇬 SG_02 @WangCai_1
+      - 🇰🇷 韩国02|内网专线|한국
+      - 🇫🇮 大萝卜鸡芬兰
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_78
+      - 🇭🇰 Relay_🇨🇳 CN-🇭🇰HK_77
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_36
+      - 🇭🇰 大萝卜鸡香港2
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_76
+      - 🇺🇲 github.com/freefq - 美国RF Engineering 28
+      - 🇬🇧 github.com/freefq - 英国  16
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 32
+      - 🇺🇲 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 42
+      - 🇨🇳 TW_769
+      - 🇺🇲 US_71
+      - 🇺🇲 Pool_🇺🇸US_69
+      - 🇸🇬 Relay_🇺🇸US-🇸🇬SG_75
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 36
+      - 大萝卜鸡西班牙
+      - 🇳🇱 荷兰01|内网专线|Nederland
+      - 🇷🇺 俄罗斯04|内网专线|Россия
+      - 🇺🇲 Relay_🇺🇸US-🏁ZZ_80
+      - 🇨🇦 github.com/freefq - 加拿大  19
+      - 🇨🇳 Relay_🇹🇼TW-🇹🇼TW_771
+      - _Cow Vagina 4
+      - 🇩🇪 德国01|内网专线|LINODE
+      - 🇭🇰 大萝卜鸡香港3
+      - 🇯🇵 Japan 2
+      - 🇷🇺 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 27
+      - 中转
+      - 🇺🇲 github.com/freefq - 美国  1
+      - 🇫🇷 Relay_🇺🇸US-🇫🇷FR_84
+      - h961359.waihuizhibiaowang.com:11443
+      - 🇯🇵 Relay_🇺🇸US-🇯🇵JP_85
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_82
+      - 🇸🇬 github.com/freefq - 新加坡Linode数据中心 25
+      - Cow Vagina_34
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_28
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
+      - 🇯🇵 github.com/freefq - 日本东京Choopa数据中心 49
+      - 🇯🇵 Relay_🇨🇳CN-🇯🇵JP_21
+      - 🇷🇴 github.com/freefq - 罗马尼亚  7
+      - h745768.waihuizhibiaowang.com:11243
+      - 🇭🇰 香港06|原生解锁|CMIHK
+      - 🇷🇺 Relay_🇨🇳CN-🇷🇺RU_130
+      - 🇺🇲 github.com/freefq - 美国  9
+      - 🇺🇲 github.com/freefq - 美国加利福尼亚州洛杉矶GisGisCloud数据中心 10
+      - 🇺🇲 Relay_🇨🇳CN-🇺🇸US_20
+      - 阿联酋04|内网专线|Dubai
+      - Cow Vagina_4
+      - 🇨🇳 Relay_🇨🇳CN-🇹🇼TW_19
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 43
+      - 🇯🇵 日本01
+      - 🇺🇲 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 22
+      - 孟加拉国02|内网专线|বাংলাদেশ
+      - 🇭🇰 Relay_🇨🇳CN-🇭🇰HK_23
+      - 🇭🇰 Hong Kong深港|D|1.5
+      - 🇷🇺 大萝卜鸡俄罗斯
+      - 🇺🇲 github.com/freefq - 美国  12
+      - 「🇸🇬」猕猴桃 x1
+      - 🇭🇰 [IEPL]HE HKIX 🇭🇰 Hong Kong 3 [NF][D ]
+      - 🇺🇲 github.com/freefq - 美国  4
+      - 🇭🇰 Hong Kong|IEPL|D|5.0
+      - 🇺🇲 github.com/freefq - 美国  20
+      - 🇺🇲 美国04|原生解锁|APERNET
+      - 🇺🇲 Relay_🇺🇸US-🇺🇸US_65
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
