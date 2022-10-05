@@ -1,7 +1,8 @@
 name: 'Post Bot'
  
 on:
-  push
+  watch:
+    types: stared
   schedule:
     - cron: '0 13 1/2 * *'
 
