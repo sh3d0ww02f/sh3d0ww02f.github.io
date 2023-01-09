@@ -1359,6 +1359,18 @@ rules:
  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
  - DOMAIN,clientservices.googleapis.com,🎯 全球直连
  - DOMAIN,update.googleapis.com,🎯 全球直连
+ - DOMAIN,dl.google.com,🎯 全球直连
+ - DOMAIN,dl.l.google.com,🎯 全球直连
+ - DOMAIN,update.googleapis.com,🎯 全球直连
+ - DOMAIN,mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt1-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt2-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt3-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt4-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt5-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt6-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt7-mtalk.google.com,🎯 全球直连
+ - DOMAIN,alt8-mtalk.google.com,🎯 全球直连
  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
  - DOMAIN,livew.l.qq.com,🎯 全球直连
  - DOMAIN,vd.l.qq.com,🎯 全球直连
@@ -10267,8 +10279,11 @@ rules:
  - DOMAIN-SUFFIX,overcast.fm,🌍 国外媒体
  - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
  - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
  - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
+ - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
  - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
  - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
@@ -10332,6 +10347,10 @@ rules:
  - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
  - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
  - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,ott.hinet.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hamivideo.hinet.net,🌍 国外媒体
+ - DOMAIN,hls-hichannel.cdn.hinet.net,🌍 国外媒体
+ - DOMAIN-KEYWORD,hamivideo.cdn.hinet.net,🌍 国外媒体
  - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
  - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
@@ -10388,6 +10407,7 @@ rules:
  - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
  - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
+ - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
  - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
  - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
  - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
@@ -10523,7 +10543,7 @@ rules:
  - DOMAIN-SUFFIX,paypal-mktg.com,🎯 全球直连
  - DOMAIN-SUFFIX,paypalobjects.com,🎯 全球直连
  - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
- - DOMAIN,api.steampowered.com,🎯 全球直连
+ - DOMAIN-SUFFIX,steamserver.net,🎯 全球直连
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.238.0/23,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
